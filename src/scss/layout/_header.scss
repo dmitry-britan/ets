@@ -1,0 +1,27 @@
+.header{
+
+}
+.header__top{
+  background-color: #f2f2f2;
+}
+.header__top-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu{
+  margin: 0 auto 0 0;
+}
+.header__langs{
+  margin-right: 30px;
+}
+.header__bottom-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 0 20px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.header__phones{
+  margin: 0 24px 0 auto;
+}

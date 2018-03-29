@@ -1,0 +1,30 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--news')
+
+block content
+
+  .container
+    -var links = ['Новости и Акции']
+    include pug/parts/breadcrumbs
+
+    h1.page__title Новости и акции
+
+  .section
+    .container
+
+      include pug/parts/special
+
+  .section.section--news
+    .container
+      h2.section__title последние новости
+      
+      .news
+        each item in [1,2,3,4]
+          include pug/parts/news-couple
+      .news__action
+        a(href="").news__action-link Загрузить еще новости
+  
+
+block body-end

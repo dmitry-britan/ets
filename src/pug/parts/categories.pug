@@ -1,0 +1,8 @@
+.categories
+	-var categories = ['Самосвалы','Мобильные краны','Шарнирные самосвалы','Подземная техника','Телескопические погрузчики','Грейдеры','Фронтальные погрузчики','Портовая техника','Эксковаторы-погрузчики','Колесные экскаваторы','Мини-погрузчики','Складские погрузчики','Сельхозшины','Легковые шины'];
+	each category,i in categories
+		article.categories__item
+			.categories__item-inner
+				h3.categories__item-header= category
+				a(href="").categories__item-photo
+					img(src="images/categories/c-"+(i+1)+".jpg", alt="")

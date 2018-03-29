@@ -1,0 +1,54 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--gallery')
+
+block content
+  .container
+    -var links = ['Фотогалерея']
+    include pug/parts/breadcrumbs
+
+    h1.page__title Фотогалерея
+
+  section.section
+    .container
+      include pug/index/gallery
+
+  section.section
+    .container
+      .album
+        .album__inner.js-slider-album
+          each i in [1,2,3,4,5,1,2,3,4,5]
+            .album__item
+              img(src="images/album/large.jpg", alt="")
+        .album__thumbs
+          .album__controls
+            button.album__controls-prev.js-album-slider-prev
+              i.icon.icon--prev
+            button.album__controls-next.js-album-slider-next
+              i.icon.icon--next
+          .album__thumbs-inner.js-slider-album-nav
+            each i in [1,2,3,4,5,6,1,2,3,4,5,6]
+              .album__thumbs-item
+                .album__thumbs-item-inner
+                  img(src="images/album/t-"+(i)+".jpg", alt="")
+
+  section.section
+    .container
+      include pug/parts/special
+
+  section.section.section--news
+    .container
+      h2.section__title последние новости
+      include pug/parts/news
+  
+  section.section.section--features
+    .container
+      h2.section__title Основные преимущества ETS
+      .section__text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической.
+      include pug/parts/features
+
+  section.section.section--seo
+    .container
+      include pug/parts/seo
+block body-end

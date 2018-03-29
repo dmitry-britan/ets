@@ -1,0 +1,15 @@
+form(action="").form.form--feedback
+  .form__row.is--flex
+    .form__field
+      label.form__label Имя
+      input(type="text", name="name").form__input
+    .form__field
+      label.form__label Телефон
+      input(type="text", name="phone").form__input
+  .form__row
+    .form__field
+      label.form__label Комментарий
+      textarea(cols="30", rows="10", name="msg").form__textarea.is--one-row
+  .form__row
+    .form__action
+      button(type="submit").btn.btn--secondary Отправить

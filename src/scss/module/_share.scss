@@ -1,0 +1,27 @@
+.share{
+	display: flex;
+	align-items: flex-end;
+	margin: 50px 0;
+}
+.share__text{
+	margin-right: 20px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: $color__base;
+}
+.share__icons{
+	display: flex;
+}
+.share__item{
+	display: block;
+	margin-right: 20px;
+	transition: transform 300ms linear;
+	&:last-child{
+		margin-right: 0;
+	}
+	&:hover{
+		transform: translateY(-2px);
+	}
+}

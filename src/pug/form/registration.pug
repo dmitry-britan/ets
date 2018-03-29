@@ -1,0 +1,82 @@
+form(action="").form.form--registration
+  .form__row
+    .form__field
+      label.form__label Фамилия
+      input(type="text", name="sname").form__input
+    .form__field
+      label.form__label Имя
+      input(type="text", name="fname").form__input
+    .form__field
+      label.form__label Отчество
+      input(type="text", name="mname").form__input
+    .form__field
+      label.form__label Телефон
+      input(type="text", name="phone").form__input
+    .form__field
+      label.form__label Email
+      input(type="email", name="email").form__input
+    .form__field
+      label.form__label Название организации
+      input(type="text", name="company").form__input
+
+  .form__title Cколько лет Вы работаете оператором строительной техники?
+  .form__row
+    - var boxes = ['1 – 3','3 – 5','5 – 10','более 10'];
+    each box, i in boxes
+      .form__field.with-checkbox
+        input.form__checkbox(id="experience-"+(i+1), type='radio', name='experience')
+        label(for='experience-'+(i+1))= box
+
+  .form__title Какой техникой Вы управляли за время своей работы?
+  .form__row
+    - var boxes = ['экскаватор','погрузчик','экскаватор-погрузчик','сочлененный самосвал','грейдер','погрузчик с бортовым поворотом','каток','асфальтоукладчик'];
+    each box, i in boxes
+      .form__field.with-checkbox
+        input.form__checkbox(id="vehicle-"+(i+1), type='checkbox', name='vehicle'+(i+1))
+        label(for='vehicle-'+(i+1))= box
+    .form__field
+      label.form__label другое
+      input(type="text", name="vehicle").form__input
+
+  .form__title С техникой каких производителей Вы работали?
+  .form__row
+    .form__field
+      input(type="text", name="brand", placeholder="Volvo").form__input
+
+  .form__title По сравнению с конкурентами техника Volvo
+  .form__row
+    - var boxes = ['лучше','на уровне','хуже','не могу сравнить'];
+    each box, i in boxes
+      .form__field.with-checkbox
+        input.form__checkbox(id="opinion-"+(i+1), type='radio', name='opinion')
+        label(for='opinion-'+(i+1))= box
+
+  .form__row
+    .form__field
+      label.form__label Почтовый индекс
+      input(type="text", name="zip").form__input
+    .form__field
+      label.form__label Область/край
+      input(type="text", name="region").form__input
+    .form__field
+      label.form__label Город
+      input(type="text", name="city").form__input
+    .form__field
+      label.form__label Адрес
+      input(type="text", name="address").form__input
+    .form__field
+      label.form__label Дата рождения
+      input(type="text", name="birthday").form__input
+
+  .form__title Откуда узнали о клубе?
+  .form__row
+    .form__field
+      label.form__label Ваш вариант ответа
+      input(type="text", name="referral").form__input
+  .form__row
+    .form__field.with-checkbox
+      input.form__checkbox(id="status", type='checkbox', name='status')
+      label(for='status') Я подтверждаю, что у меня есть действующее удостоверение тракториста-машиниста.
+  .form__row
+    .form__action
+      button(type="submit").btn.btn--secondary Отправить

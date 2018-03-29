@@ -1,0 +1,10 @@
+<% _.forEach(photosLink, function(photoLink) { %>
+	<div class="col col--4-of-12 col--s-12-of-12 col--m-6-of-12 col--l-4-of-12">
+		<div class="media">
+			<div class="media__inner">
+				<div class="media__cover"><img src="<%- photoLink %>" alt=""/></div>
+				<div class="media__action js-remove-media"><span>Удалить</span><i class="icon icon-close-white"></i></div>
+			</div>
+		</div>
+	</div>
+<% }); %>

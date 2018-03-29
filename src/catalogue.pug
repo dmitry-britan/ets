@@ -1,0 +1,40 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--catalogue')
+
+block content
+
+  .container
+    -var links = ['Техника с наработкой']
+    include pug/parts/breadcrumbs
+
+    h1.page__title Техника с наработкой
+
+  .section.section--catalogue
+    .container
+      .catalogue
+        aside.catalogue__filter
+          include pug/parts/catalogue-filter
+        main.catalogue__body
+          .catalogue__products
+            include pug/info/product-info
+            each product,i in products
+              article.product
+                .product__inner
+                  a(href="").product__photo
+                    img(src="images/product/p-"+(i+1)+".jpg", alt="")
+                  .product__body
+                    h3.product__title= product.title
+                    ul.product__properties
+                      each property in product.properties
+                        li.product__properties-item= property
+                    .product__action
+                      a(href="").btn.btn--primary Подробнее
+          .catalogue__action
+            a(href="").btn.btn--secondary.btn--wide.btn--large Загрузить еще
+
+  .section.section--seo
+    .container
+      include pug/parts/seo
+block body-end

@@ -1,0 +1,47 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--service')
+
+block content
+
+  .container
+    -var links = ['Сервис']
+    include pug/parts/breadcrumbs
+
+    h1.page__title Сервис
+
+  .section
+    .container
+      .service
+        .service__text
+          p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+        .service__items
+          .service__item
+            .service__item-inner(style="background-image: url(images/service/s-1.png);")
+              a(href="").service__action Запчасти
+          .service__item
+            .service__item-inner(style="background-image: url(images/service/s-2.png);")
+              a(href="").service__action Ремонт
+          .service__item
+            .service__item-inner(style="background-image: url(images/service/s-3.png);")
+              a(href="").service__action Шиномонтаж
+
+  .section.section--special
+    .container
+      include pug/parts/special
+
+  .section.section--news
+    .container
+      h2.section__title последние новости
+      include pug/parts/news
+
+  .section.section--offer
+    .container
+      include pug/parts/offer
+
+  .section.section--seo
+    .container
+      include pug/parts/seo
+
+block body-end

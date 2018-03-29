@@ -1,0 +1,69 @@
+.product{
+	width: percentage(1/3);
+	padding-left: 20px;
+	margin-bottom: 18px;
+}
+.product__inner{
+	border: 2px solid $color__third;
+	background-color: #ffffff;
+	transition: border 300ms linear;
+	&:hover{
+		border-color: $color__primary;
+	}
+}
+.product__photo{
+	display: block;
+	margin-bottom: 30px;
+	img{
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+.product__body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 10px;
+}
+.product__title{
+	margin: 0 0 24px;
+	@include VolvoBroadPro();
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: $color__base;
+}
+.product__properties{
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+}
+.product__properties-item{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #010101;
+}
+.product__specifications{
+	margin: 0 0 20px; padding: 0;
+	list-style: none;
+	text-align: left;
+}
+.product__specifications-item{
+	font-size: 14px;
+	line-height: 24px;
+	color: #010101;
+	font-weight: 300;
+	i{
+		margin-right: 10px;
+		&.icon--power{
+			margin-left: 3px;
+			margin-right: 13px;
+		}
+	}
+}
+.product__action{
+	margin-bottom: 24px;
+}

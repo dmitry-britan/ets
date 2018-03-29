@@ -1,0 +1,59 @@
+.widget
+  .widget__header Искать по названию
+  .widget__body
+    form.search
+      input(type="search", value="", placeholder="Поиск", name="search").search__input
+      button(type="submit").search__btn OK
+.widget
+  .widget__header.with--icon
+    span Вы выбрали
+    button(type="reset" form="checked").widget__action
+      i.icon.icon--reset
+  .widget__body
+    form#checked.form.is--filtered
+      .form__row
+        .form__title Бренд
+        - var boxes = ['Sennebogen'];
+        each box,i in boxes
+          .form__field.with-checkbox
+            input.form__checkbox(id="b-"+(i+1), type="checkbox", name="b-"+(i+1) checked)
+            label(for="b-"+(i+1))= box
+.widget
+  .widget__header Фильтры
+  .widget__body
+    form.form.is--filter
+      .form__row
+        .form__title Бренды
+        - var boxes = ['Volvo ce','Terex trucks','Faresin','Goldhofer','SDLG'];
+        each box,i in boxes
+          .form__field.with-checkbox
+            input.form__checkbox(id="brand-"+(i+1), type="checkbox", name="brand-"+(i+1))
+            label(for="brand-"+(i+1))= box
+      .form__row
+        .form__title Грузоподъемность
+        - var boxes = ['до 10 т','до 50 т','до 100 т','до 150 т','до 200 т','до 250 т','до 300 т'];
+        each box,i in boxes
+          .form__field.with-checkbox
+            input.form__checkbox(id="carrying-"+(i+1), type="checkbox", name="carrying-"+(i+1))
+            label(for="carrying-"+(i+1))= box
+      .form__row
+        .form__title Мах высота стрелы
+        - var boxes = ['до 20 м','до 30 м','до 40 м','до 50 м','до 60 м','до 70 м','до 80 м','до 90 м','до 100 м','до 114 м'];
+        each box,i in boxes
+          .form__field.with-checkbox
+            input.form__checkbox(id="boom-"+(i+1), type="checkbox", name="boom-"+(i+1))
+            label(for="boom-"+(i+1))= box
+      .form__row
+        .form__title Мах высота гуська
+        - var boxes = ['до 60 м','до 70 м','до 80 м','до 90 м','до 100 м','до 110 м','до 120 м','до 130 м','до 140 м','до 154 м'];
+        each box,i in boxes
+          .form__field.with-checkbox
+            input.form__checkbox(id="jib-"+(i+1), type="checkbox", name="jib-"+(i+1))
+            label(for="jib-"+(i+1))= box
+      .form__row
+        .form__title Мощьность двигателя
+        - var boxes = ['до 100 кВТ','100 – 150 кВТ','150 – 250 кВТ','250 – 350 кВТ','350 – 450 кВТ','450 – 550 кВТ','550 – 650 кВТ','650 – 750 кВТ','750 – 850 кВТ'];
+        each box,i in boxes
+          .form__field.with-checkbox
+            input.form__checkbox(id="power-"+(i+1), type="checkbox", name="power-"+(i+1))
+            label(for="power-"+(i+1))= box

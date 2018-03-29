@@ -1,0 +1,43 @@
+header.header
+  .header__top
+    .container
+      .header__top-inner
+        .header__menu
+          .top-menu
+            ul.top-menu__list
+              -
+                var links = [
+                  {title: 'О компании', url: 'about.html'},
+                  {title: 'Новости и Акции', url: 'news.html'},
+                  {title: 'Вакансии', url: 'career.html'},
+                  {title: 'Фотогалерея', url: 'gallery.html'},
+                  {title: 'Контакты', url: 'contacts.html'},
+                ];
+              each link in links
+                li.top-menu__item
+                  a(href=link.url).top-menu__link= link.title
+
+
+        .header__langs
+          ul.langs__list
+            -var links = [{title:'UA', state:''}, {title:'RU', state:'is--current'}, {title:'EN', state:''}];
+            each link in links
+              li.langs__item
+                a(href="" class="langs__link "+link.state)= link.title
+        .header__search
+          a(href="#search")
+            i.icon.icon--search
+          include header/search-modal
+
+  .header__bottom
+    .container
+      .header__bottom-inner
+        .header__logo
+          include header/logo
+        .header__phones
+          include header/phones
+        .header__callback
+          include header/callback
+
+// NAVIGATION
+include header/nav

@@ -1,0 +1,31 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--contacts')
+
+block content
+
+  .container
+    -var links = ['Контакты']
+    include pug/parts/breadcrumbs
+
+    h1.page__title Контакты
+
+  .page__content
+    .container
+        p
+          strong
+            | Email: 
+          a(href="mailto:Info@ets-group.com.ua").link
+            | Info@ets-group.com.ua
+
+  .section.section--staff
+    .container
+      include pug/parts/staff
+
+  .section.section--feedback
+    .container
+      h2.section__title Форма обратной связи
+      include pug/form/feedback
+
+block body-end

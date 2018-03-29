@@ -1,0 +1,16 @@
+#map.map
+
+script.
+	function initMap() {
+		var location = {lat: 48.6054728, lng: 37.5316405};
+		var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 16,
+		center: location,
+		styles: [],
+		});
+		var marker = new google.maps.Marker({
+		position: location,
+		map: map,
+	});
+	}
+script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCbR8xpKsCCuj-3AZ9oHMHat8vR621poH0&callback=initMap')

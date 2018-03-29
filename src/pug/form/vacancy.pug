@@ -1,0 +1,30 @@
+form(action="").form.form--vacancy
+  .form__header Откликнуться на вакансию
+  .form__row
+    .form__field
+      label.form__label Имя
+      input(type="text", name="name").form__input
+    .form__field
+      label.form__label Телефон
+      input(type="text", name="phone").form__input
+    .form__field
+      label.form__label Email
+      input(type="email", name="enail").form__input
+  .form__row
+    .form__field
+      label.form__label Сопроводительный текст
+      textarea(cols="30", rows="10", name="msg").form__textarea.is--one-row
+  .form__row
+    .form__field
+      p.form__text Пожалуйста, прикрепите свое резюме. Максимальный размер – 4 Мб, файлы в формате PDF, DOC, DOCX, RTF, TXT
+  .form__row
+    .form__field.with--file
+      .form__file
+        input(type='file', name='cv_file', id="cv")
+        label(for="cv").btn.btn--secondary.btn--wide Приложить резюме
+      .form__field-validation
+        .form__field-validation-item.js-file-type Только файлы в формате PDF, DOC, DOCX, RTF, TXT
+        .form__field-validation-item.js-file-size Максимальный размер – 4 Мб
+  .form__row
+    .form__action
+      button(type="submit").btn.btn--primary.btn--wide Отправить

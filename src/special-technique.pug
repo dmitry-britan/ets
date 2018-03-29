@@ -1,0 +1,27 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--category')
+
+block content
+
+  .container
+    -var links = ['Техника по назначению']
+    include pug/parts/breadcrumbs
+
+    h1.page__title Техника по назначению
+
+  .section.section--categories
+    .container
+      include pug/parts/categories
+
+  .section.section--features
+    .container
+      h2.section__title.is--centered Основные преимущества ETS
+      .section__text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической.
+      include pug/parts/features
+
+  .section.section--seo
+    .container
+      include pug/parts/seo
+block body-end

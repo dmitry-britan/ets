@@ -1,0 +1,54 @@
+.pagination{
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		border-radius: 5px;
+		border: 1px solid #acacac;
+		background-color: #ffffff;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 40px;
+		text-align: center;
+		color: #acacac;
+
+		&:hover{
+			text-decoration: none;
+			color: #000000;
+		}
+	}
+
+	.is--active{
+		display: inline-block;
+		vertical-align: middle;
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		border-radius: 5px;
+		border: 1px solid #acacac;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 40px;
+		text-align: center;
+		background-color: #ffb600;
+		color: #ffffff;
+	}
+	span {
+		display: inline-block;
+		vertical-align: bottom;
+		text-align: center;
+		width: auto;
+		height: auto;
+		margin-right: 10px;
+		color: #acacac;
+		font-size: 20px;
+		font-weight: 100;
+		line-height: 20px;
+	}
+}

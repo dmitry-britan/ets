@@ -1,0 +1,8 @@
+- links = links || [];
+.breadcrumbs
+  ul.breadcrumbs__list
+    li.breadcrumbs__item
+      a(href="").breadcrumbs__link Главная
+    each link in links
+      li.breadcrumbs__item
+        a(href="").breadcrumbs__link= link

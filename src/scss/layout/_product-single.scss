@@ -1,0 +1,114 @@
+.product-single{}
+.product-single__inner{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.product-single__photos{
+	flex-basis: 600px;
+	width: 600px;
+	flex-shrink: 0;
+	padding-right: 20px;
+}
+.product-single__body{
+	flex-grow: 1;
+}
+.product-single__title{
+	margin: 0 0 20px;
+	@include VolvoBroadPro();
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: $color__base;
+}
+.product-single__properties{}
+.product-single__properties-title{
+	margin: 0 0 20px;
+	@include VolvoBroadPro();
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: $color__base;
+}
+.product-single__properties-list{
+	margin: 0 0 10px;
+	padding: 0;
+	list-style: none;
+}
+.product-single__properties-list-item{
+	margin-bottom: 16px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 21px;
+	color: #010101;
+}
+.product-single__desc{
+	margin: 0 0 10px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #010101;
+}
+.product-single__action{}
+
+.product-single__photo{
+	position: relative;
+}
+.product-single__photo-inner{
+	margin-bottom: 54px;
+}
+.product-single__photo-item{}
+.product-single__thumbs{
+	position: relative;
+	margin-bottom: 54px;
+}
+.product-single__thumbs-inner{
+	margin-left: -20px;
+}
+.product-single__thumbs-item{
+	outline: none;
+}
+.product-single__thumbs-item-inner{
+	position: relative;
+	max-width: 180px;
+	margin-left: 20px;
+	box-shadow: inset 0 0 0 2px rgba($color__secondary, 0);
+	transition: all 300ms linear;
+	cursor: pointer;
+	img{
+		position: relative;
+		max-width: 100%;
+		opacity: 1;
+		transition: all 300ms linear;
+		z-index: -1;
+	}
+	&:hover{
+		box-shadow: inset 0 0 0 2px $color__secondary;
+	}
+	.slick-current &{
+		box-shadow: inset 0 0 0 2px $color__secondary;
+		img{
+			opacity: 0.5;
+		}
+	}
+}
+
+.product-single__controls{
+  position: absolute;
+  right: 0px; top: -40px;
+  z-index: 100;
+  width: 51px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-single__controls-prev,
+.product-single__controls-next{
+  outline: none;
+  padding: 0;
+  border: 0;
+	background-color: transparent;
+	&.slick-disabled{
+		opacity: 0.5;
+	}
+}

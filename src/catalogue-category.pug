@@ -1,0 +1,52 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--catalogue')
+
+block content
+  .container
+    -var links = ['Каталог техники','Подъемные кран','Краны Sennebogen']
+    include pug/parts/breadcrumbs
+
+    h1.page__title Краны Sennebogen
+
+  .section.section--catalogue
+    .container
+      .catalogue
+        aside.catalogue__filter
+          include pug/parts/catalogue-filter
+        main.catalogue__body
+          .catalogue__products
+            each i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+              article.product
+                .product__inner
+                  a(href="").product__photo
+                    img(src="images/product/p-2.jpg", alt="")
+                  .product__body
+                    h3.product__title Кран-экскаватор 300 т
+                    ul.product__specifications
+                      li.product__specifications-item
+                        i.icon.icon--carrying
+                        strong 45 500 - 53 300
+                        | 
+                        | кг
+                      li.product__specifications-item
+                        i.icon.icon--power
+                        strong 278
+                        | 
+                        | кВт
+                      li.product__specifications-item
+                        i.icon.icon--capacity
+                        strong 1,55 - 3,3
+                        | 
+                        | м
+                        sup 3
+                    .product__action
+                      a(href="").btn.btn--primary Подробнее
+          .catalogue__action
+            a(href="").btn.btn--secondary.btn--wide.btn--large Загрузить еще
+
+  .section.section--seo
+    .container
+      include pug/parts/seo
+block body-end

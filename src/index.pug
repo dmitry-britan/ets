@@ -1,0 +1,50 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--index')
+
+block content
+  .slider
+    .slider__controls
+      button.slider__controls-prev.js-promo-slider-prev
+        i.icon.icon--slider-prev
+      button.slider__controls-next.js-promo-slider-next
+        i.icon.icon--slider-next
+    .slider__inner.js-slider
+      each i in [1,2,3]
+        .slider__item(style="background: url(images/slider/s-1.jpg) 0 0 no-repeat;")
+          article.slider__content
+            h4.slider__title ОФИЦИАЛЬНЫЙ ДИЛЕР VOLVO НА ТЕРРИТОРИИ УКРАИНЫ
+            .slider__body
+              h5.slider__body-title Сочлененные самосвалы 
+              p.slider__body-text При выполнении карьерных, добывающих, земляных работ, при прокладке туннелей и переработке материалов и мусора, шарнирно сочлененный самосвал Volvo ежедневно сможет выполнить ваши транспортные задачи.
+            a(href="").slider__action узнать больше
+
+  .section
+    .container
+      include pug/index/brands
+ 
+  .section
+    .container
+      include pug/parts/special
+
+  .section
+    .container
+      h2.section__title АССОРТИМЕНТ техники VOLVO с наработкой
+      include pug/index/assortment
+
+  .section.section--news
+    .container
+      h2.section__title последние новости
+      include pug/parts/news
+  
+  .section.section--features
+    .container
+      h2.section__title Основные преимущества ETS
+      .section__text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической.
+      include pug/parts/features
+
+  .section.section--seo
+    .container
+      include pug/parts/seo
+block body-end

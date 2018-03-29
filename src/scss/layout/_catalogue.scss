@@ -1,0 +1,21 @@
+.catalogue{
+	display: flex;
+}
+.catalogue__filter{
+	flex-shrink: 0;
+	width: 300px;
+	padding-right: 20px;
+}
+.catalogue__body{
+	flex-grow: 1;
+}
+.catalogue__products{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -20px;
+	margin-bottom: 18px;
+}
+.catalogue__action{
+	display: flex;
+	justify-content: center;
+}

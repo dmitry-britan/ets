@@ -1,0 +1,49 @@
+footer.footer
+  .footer__top
+    .container
+      .footer__top-inner
+        .footer__menu
+          // MENU
+          article.menu
+            h3.menu__header Call center
+            ul.menu__list
+              -var links = ['0 800 300 771', '(067) 353 56 94'];
+              each link in links
+                li.menu__item
+                  a(href="").menu__link.menu__link--phone= link
+        .footer__menu
+          // MENU
+          article.menu
+            h3.menu__header О компании ETS
+            ul.menu__list
+              -var links = ['О компании', 'Новости и Акции', 'Вакансии', 'Контакты'];
+              each link in links
+                li.menu__item
+                  a(href="").menu__link= link
+        .footer__menu
+          // MENU
+          article.menu
+            h3.menu__header Каталог
+            ul.menu__list
+              -var links = ['Каталог техники', 'техника по назначению', 'техника с наработкой', 'Бренды'];
+              each link in links
+                li.menu__item
+                  a(href="").menu__link= link
+        .footer__menu
+          // MENU
+          article.menu
+            h3.menu__header Услуги
+            ul.menu__list
+              -var links = ['шиномонтаж', 'Operators club', 'сервис', 'фотогалерея'];
+              each link in links
+                li.menu__item
+                  a(href="").menu__link= link
+        
+  .footer__bottom
+    .container
+      .footer__bottom-inner
+        .footer__copyrights
+          .copyrights © Copyright ETS-Group.com.ua 2017
+        .footer__logo
+          a(href="").logo.logo--bottom
+            img(src="images/logo-bottom.png", alt="")

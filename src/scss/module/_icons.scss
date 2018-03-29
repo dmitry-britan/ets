@@ -1,0 +1,40 @@
+.icon{}
+.icon--search{
+  @include sprite('search');
+}
+.icon--arrow-down{
+  @include sprite('arrow-down');
+}
+.icon--slider-prev{
+  @include sprite('slider-prev');
+}
+.icon--slider-next{
+  @include sprite('slider-next');
+}
+.icon--prev{
+  @include sprite('prev');
+}
+.icon--next{
+  @include sprite('next');
+}
+.icon--facebook{
+  @include sprite('facebook');
+}
+.icon--instagram{
+  @include sprite('instagram');
+}
+.icon--angle-down{
+  @include sprite('angle-down');
+}
+.icon--carrying{
+  @include sprite('carrying');
+}
+.icon--power{
+  @include sprite('power');
+}
+.icon--capacity{
+  @include sprite('capacity');
+}
+.icon--reset{
+  @include sprite('reset');
+}

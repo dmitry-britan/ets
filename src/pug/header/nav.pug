@@ -1,0 +1,79 @@
+nav.nav
+  .container
+    .nav__inner
+      ul.nav__list
+        li.nav__item.with-sub
+          a(href="" class="nav__link") 
+            | Каталог техники
+            i.icon.icon--arrow-down
+          .nav__sub
+            .nav__sub-block
+              a(href="").nav__sub-header Бренды
+              ul.nav__sub-list
+                -var links = ['Volvo ce','Terex trucks','Sennebogen','Faresin','Goldhofer','SDLG']
+                each link in links
+                  li.nav__sub-item
+                    a(href="").nav__sub-link= link
+        li.nav__item.with-sub
+          a(href="" class="nav__link") 
+            | Техника по назначению
+            i.icon.icon--arrow-down
+          .nav__sub
+            .nav__sub-block
+              a(href="").nav__sub-header Строительная техника
+              ul.nav__sub-list
+                -var links = ['Экскаваторы','Погрузчики','Самосвалы']
+                each link in links
+                  li.nav__sub-item
+                    a(href="").nav__sub-link= link
+                    
+              a(href="").nav__sub-header Подъемные краны
+              ul.nav__sub-list
+                -var links = ['Краны экскаваторы','Гусеничные краны','Телескопические краны','Портовые краны','Электрические краны','Краны Senhebohen']
+                each link in links
+                  li.nav__sub-item
+                    a(href="").nav__sub-link= link
+            .nav__sub-block
+              a(href="").nav__sub-header Дорожно-строительная техника
+              ul.nav__sub-list
+                -var links = ['Грейдеры','Катки ','Дорожные фрезы Volvo','Асфальтоукладчики Volvo','Выглаживающие плиты']
+                each link in links
+                  li.nav__sub-item
+                    a(href="").nav__sub-link= link
+              a(href="").nav__sub-header Сельскохозяйственная техника
+              ul.nav__sub-list
+                -var links = ['Телескопические погрузчики','Фронтальные погрузчики','Кормораздатчики','Volvo','Faresin']
+                each link in links
+                  li.nav__sub-item
+                    a(href="").nav__sub-link= link
+            .nav__sub-block
+              a(href="").nav__sub-header Карьерная техника
+              ul.nav__sub-list
+                -var links = ['Самосвалы с жесткой рамой','Шарнирно-сочлененные самосвалы','Экскаваторы','Бульдозеры','Фронтальные погрузчики','Автогрейдеры','Навесное оборудование','Volvo','Terex Trucks','Sennebogen','Faresin']
+                each link in links
+                  li.nav__sub-item
+                    a(href="").nav__sub-link= link
+            .nav__sub-block
+              a(href="").nav__sub-header Тралы
+              ul.nav__sub-list
+                -var links = ['Goldhofer']
+                each link in links
+                  li.nav__sub-item
+                    a(href="").nav__sub-link= link
+        li.nav__item
+          a(href="" class="nav__link") Техника с наработкой
+        li.nav__item.with-sub
+          a(href="" class="nav__link") 
+            | Сервис
+            i.icon.icon--arrow-down
+          .nav__sub
+            .nav__sub-block
+              a(href="").nav__sub-header Запчасти
+            .nav__sub-block
+              a(href="").nav__sub-header Сервис
+            .nav__sub-block
+              a(href="").nav__sub-header Сервисные центры
+        li.nav__item
+          a(href="" class="nav__link") Шиномонтаж
+        li.nav__item
+          a(href="" class="nav__link") Operators Club

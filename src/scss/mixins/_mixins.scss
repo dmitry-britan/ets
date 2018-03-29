@@ -1,0 +1,49 @@
+@mixin triangle($size, $color, $direction: 'up') {
+  width: 0;
+  height: 0;
+
+  @if $direction == 'up' { 
+    border-right: $size solid transparent;
+    border-bottom: $size * 1.732 solid $color; 
+    border-left: $size solid transparent; 
+  } @else if $direction == 'down' {
+    border-top: $size * 1.732 solid $color; 
+    border-right: $size solid transparent; 
+    border-left: $size solid transparent; 
+  } @else if $direction == 'left' {
+    border-top: $size solid transparent; 
+    border-right: $size * 1.732 solid $color; 
+    border-bottom: $size solid transparent; 
+  } @else if $direction == 'right' {
+    border-top: $size solid transparent; 
+    border-bottom: $size solid transparent; 
+    border-left: $size * 1.732 solid $color; 
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+@mixin VolvoBroadPro {
+  font-family: "Volvo Broad Pro", Roboto, Arial, Helvetica, sans-serif;
+}
+@mixin dropdown($translateY: 10px) {
+  visibility: hidden;
+  opacity: 0;
+	background-color: #ffffff;
+  transform: translateY($translateY);
+  transition: 0.3s all ease-in-out 0s, 0s visibility linear 0.3s;
+	z-index: -1;
+}
+
+@mixin dropdownHover($translateY: 0px) {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+  transform: translateY($translateY);
+  transition-delay: 0s, 0s, 0.3s;
+}

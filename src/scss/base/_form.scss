@@ -1,0 +1,380 @@
+/**
+*
+* form
+*
+**/
+
+input[type=email],
+input[type=number],
+input[type=search],
+input[type=text],
+input[type=tel],
+input[type=url],
+input[type=password],
+textarea {
+  appearance: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #36332e;
+  &.error {
+    position: absolute;
+    right: 0;
+    display: block;
+    text-align: right;
+    font-size: $fs--small;
+    line-height: $lh--small;
+    color: #ec0202;
+  }
+}
+
+input,
+select,
+textarea {
+  @extend %formElement;
+}
+
+%formElement {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 14px 0 0 0;
+  outline: 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid $color__third;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 34px;
+  color: $color__gray;
+  transition:  all 300ms linear;
+  &.error {
+    border-color: #ec0202;
+    color: #ec0202;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $color__base;
+  }
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  z-index: 10;
+  @include note {
+    width: 100%;
+  }
+
+  &--feedback{
+    max-width: 800px;
+  }
+}
+.form__divider{
+  padding: 15px;
+}
+.form__header{
+  margin: 0 0 20px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color__base;
+}
+.form__title{
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+.form__row{
+  display: block;
+  &.is--flex{
+    display: flex;
+    margin-left: -20px;
+  }
+}
+.form__field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  .is--flex &{
+    margin-left: 20px;
+  }
+  &.with--file{
+    margin-bottom: 20px;
+  }
+  &.is--required {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 8px;
+      z-index: 10; //@include sprite($i-red-star);
+    }
+  }
+  &.with-checkbox{
+    margin-bottom: 20px;
+  }
+  &.mb-10{
+    margin-bottom: 10px;
+  }
+}
+.form__field-validation{}
+.form__field-validation-item{
+  display: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: darken(red, 5%);
+}
+.form__action{
+  margin-bottom: 36px;
+}
+.form__text{
+  max-width: 380px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  color: $color__gray;
+}
+.form__label{
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  left: 0; right: 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 34px;
+  color: $color__gray;
+  pointer-events: none;
+  transition:  all 300ms linear;
+
+  &.is--active{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    bottom: 34px;
+    color: $color__base;
+  }
+}
+.form__input{
+  @extend %formElement;
+  width: 100%;
+  max-width: 400px;
+}
+.form__input--dummy{
+  width: 100%;
+}
+.form__select input{
+  width: 100%;
+}
+.form__field--select {
+  position: relative;
+  background: #fff;
+  z-index: 2;
+  &:after {
+    content: ''; 
+  //  @include sprite('arrow-down-md');
+    position: absolute;
+    right: 12px;
+    top: 17px;
+    z-index: -1;
+  }
+  select {
+    width: 100%;
+    padding-right: 50px;
+    background: transparent;
+  }
+}
+
+// FORM INPUT - SELECT - TEXTAREA
+%select {
+  box-sizing: border-box;
+  user-select: none;
+  appearance: none;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.form__select {
+  @extend %select;
+  option {
+    line-height: 28px;
+  }
+}
+
+.form__textarea {
+  min-height: 85px;
+  resize: none;
+  &.is--one-row{
+    width: 100%;
+    height: 50px;
+    min-height: auto;
+  }
+}
+
+.form__radio {
+  vertical-align: top;
+  width: 13px;
+  height: 13px;
+  margin: 0 3px 0 0;
+}
+
+.form__radio+label {
+  cursor: pointer;
+}
+
+.form__radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.form__radio:not(checked)+label {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+.form__radio:not(checked)+label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  border: 2px solid $color__primary;
+  border-radius: 50%;
+  background: #FFF;
+}
+
+.form__radio:not(checked)+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: $color__primary;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.form__radio:checked+label:after {
+  opacity: 1;
+}
+
+.form__radio:focus+label:before {}
+
+.form__file {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  cursor: pointer;
+  input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    &+label {}
+  }
+}
+
+.form__checkbox {
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  margin: 0 3px 0 0;
+}
+
+.form__checkbox+label {
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.form__checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.form__checkbox:not(checked)+label {
+  position: relative;
+  padding: 0 0 0 36px;
+}
+
+.form__checkbox:not(checked)+label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid $color__third;
+  background-color: #ffffff;
+}
+
+.form__checkbox:not(checked)+label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 5px;
+  height: 8px;
+  border: solid $color__base;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.2s;
+
+  .is--filtered &{
+    top: 5px;
+    left: 5.5px;
+    border: 0;
+    @include sprite('selected');
+    transform: rotate(0);
+    transition: none;
+  }
+  .is--filter &{
+    top: 5px;
+    left: 5px;
+    border: 0;
+    @include sprite('checked');
+    transform: rotate(0);
+    transition: none;
+  }
+}
+
+.form__checkbox:checked+label:after {
+  opacity: 1;
+}
+
+.form__checkbox:checked+label:before {
+  background-color: #fff;
+  .is--filtered &{
+    background-color: $color__secondary;
+    border-color: $color__secondary;
+  }
+}

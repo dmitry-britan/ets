@@ -1,0 +1,72 @@
+.slider{
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.slider__item{
+  position: relative;
+  height: 504px!important;
+}
+.slider__content{
+  position: absolute;
+  top: 40px; left: 50px;
+  max-width: 520px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: left;
+}
+.slider__title{
+  margin: 0;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #fefefe;
+  @include VolvoBroadPro();
+
+}
+.slider__body{}
+.slider__body-title{
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+.slider__body-text{
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ffffff;
+}
+.slider__action{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  border: 2px solid #fff;
+  padding: 16px 66px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 300ms linear;
+
+  &:hover{
+    border: 2px solid $color__secondary;
+    background-color: $color__secondary;
+  }
+}
+.slider__controls{
+  position: absolute;
+  right: 20px; bottom: 20px;
+  z-index: 100;
+  width: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider__controls-prev,
+.slider__controls-next{
+  outline: none;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}

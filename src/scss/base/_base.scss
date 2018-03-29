@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body{
+  font-family: Roboto, sans-serif;
+}
+.container{
+  min-width: 320px;
+  max-width: 1210px;
+	margin: 0 auto;
+  padding: 0 15px;
+}
+
+a{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-decoration: underline;
+  // color: #2d485a;
+  color: $color__secondary;
+}
+.link{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}

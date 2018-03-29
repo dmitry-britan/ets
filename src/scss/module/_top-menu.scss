@@ -1,0 +1,25 @@
+.top-menu{
+  margin: 0;
+  padding: 0;
+}
+.top-menu__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.top-menu__item{
+  display: inline-block;
+  vertical-align: top;
+}
+.top-menu__link{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  display: block;
+  padding: 6px 9px 7px 14px;
+  color: $color__gray;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 300ms linear;
+}

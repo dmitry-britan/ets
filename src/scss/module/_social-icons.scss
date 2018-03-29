@@ -1,0 +1,24 @@
+.social-icons{
+	text-align: center;
+
+	@include tablet {
+		padding: 8px 0;
+	}
+}
+.social-icons__link{
+	display: inline-block;
+	margin-right: 5px;
+	box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.12);
+	border: 1px solid #ffffff;
+	border-radius: 15px;
+	font-size: 16px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	color: #ffffff;
+
+	&:hover{
+		border: 1px solid #ffe149;
+		color: #ffe149;
+	}
+}

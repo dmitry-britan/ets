@@ -1,0 +1,68 @@
+extends pug/base
+
+append vars
+  - html.classList.push('page page--gallery')
+
+block content
+  .container
+    -var links = ['Каталог техники','Подъемные краны','Краны Sennebogen','Колесный кран-экскаватор Sennebogen 624 HD']
+    include pug/parts/breadcrumbs
+
+
+  main.product-single
+    .container
+      .product-single__inner
+        .product-single__body
+          h1.product-single__title Колесный кран-экскаватор Sennebogen 624 HD
+          p Sennebogen 624 HD
+          p: a(href="") Брошюра «Колесный кран-экскаватор Sennebogen 624 HD»
+          .product-single__properties
+            h3.product-single__properties-title Технические характеристики
+            ul.product-single__properties-list
+              -var items = ['Исполнение — колесное','Максимальная грузоподъемность — 13,5 т','Максимальная  высота крюка — 19 –19 м','Мощность двигателя — 129 кВТ','Лебедка — 60 кН'];
+              each item in items
+                li.product-single__properties-list-item= item
+          .product-single__desc
+            | Компактный кран-экскаватор с эксплуатационным весом 27 т и гусеничной ходовой частью. Простая транспортировка, быстрая готовность к эксплуатации при управлении 1 человеком. Идеален для применения в сфере строительства объектов водной инфраструктуры, в качестве судовой надстройки или на понтоне. Для экскаваторных и перевалочных работ с помощью двух- или многочелюстных грейферов. Принадлежит к категории кранов-экскаваторов-такси и может быстро перемещаться на другое место.
+          .product-single__action
+            a(href="").btn.btn--large.btn--wide.btn--secondary Оставить заявку
+        .product-single__photos
+          .product-single__photo
+            .product-single__photo-inner.js-slider-product-single
+              each i in [1,2,3,4,5,6]
+                .product-single__photo-item
+                  img(src="images/product-single/large.jpg", alt="")
+            .product-single__thumbs
+              .product-single__controls
+                button.product-single__controls-prev.js-product-single-slider-prev
+                  i.icon.icon--prev
+                button.product-single__controls-next.js-product-single-slider-next
+                  i.icon.icon--next
+              .product-single__thumbs-inner.js-slider-product-single-nav
+                each i in [1,2,3,1,2,3]
+                  .product-single__thumbs-item
+                    .product-single__thumbs-item-inner
+                      img(src="images/product-single/t-"+(i)+".jpg", alt="")
+      
+  section.section.section--static-infomer
+    .container
+      .static-informer
+        .static-informer__inner
+          article.static-informer__item
+            a(href="").static-informer__content
+              .static-informer__photo
+                img(src="images/static-informer/s-1.png", alt="")
+              .static-informer__body
+                h3.static-informer__title Сервисная поддержка
+                p.static-informer__text Ваше спокойствие
+          article.static-informer__item
+            a(href="").static-informer__content
+              .static-informer__photo
+                img(src="images/static-informer/s-2.png", alt="")
+              .static-informer__body
+                h3.static-informer__title Техника с наработкой
+                p.static-informer__text Весь модельный ряд
+  section.section.section--seo
+    .container
+      include pug/parts/seo
+block body-end

@@ -1,0 +1,32 @@
+.assortment
+  .assortment__controls
+    button.assortment__controls-prev.js-assortment-slider-prev
+      i.icon.icon--prev
+    button.assortment__controls-next.js-assortment-slider-next
+      i.icon.icon--next
+  .assortment__inner.js-slider-assortment
+    each i in [1,2]
+      article.assortment__item
+        .assortment__item-inner
+          a(href="").assortment__link
+            span.assortment__photo
+              img(src="images/assortment/a-1.png", alt="")
+            span.assortment__text Сочлененные самосвалы
+      article.assortment__item
+        .assortment__item-inner
+          a(href="").assortment__link
+            span.assortment__photo
+              img(src="images/assortment/a-2.png", alt="")
+            span.assortment__text Асфальтоукладчики
+      article.assortment__item
+        .assortment__item-inner
+          a(href="").assortment__link
+            span.assortment__photo
+              img(src="images/assortment/a-3.png", alt="")
+            span.assortment__text Катки
+      article.assortment__item
+        .assortment__item-inner
+          a(href="").assortment__link
+            span.assortment__photo
+              img(src="images/assortment/a-4.png", alt="")
+            span.assortment__text Экскаваторы

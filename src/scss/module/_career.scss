@@ -1,0 +1,33 @@
+.career{
+	margin-bottom: 50px;
+}
+.career__item{}
+.career__item-header{
+	margin: 0 0 16px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20x;
+	text-transform: uppercase;
+	color: #2d485a;
+	cursor: pointer;
+
+	i{
+		margin-left: 10px;
+		transition: transform 300ms linear;
+		.is--active &{
+			transform: rotate(180deg);
+		}
+	}
+}
+.career__item-content{
+	display: none;
+	margin: 0 0 50px;
+}
+.career__desc{
+	margin: 0 0 30px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #000000;
+}
+.career__form{}

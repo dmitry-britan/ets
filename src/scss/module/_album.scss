@@ -1,0 +1,60 @@
+.album{
+	position: relative;
+}
+.album__inner{
+	margin-bottom: 54px;
+}
+.album__item{}
+.album__thumbs{
+	position: relative;
+	margin-bottom: 54px;
+}
+.album__thumbs-inner{
+	margin-left: -20px;
+}
+.album__thumbs-item{
+	outline: none;
+}
+.album__thumbs-item-inner{
+	position: relative;
+	max-width: 180px;
+	margin-left: 20px;
+	box-shadow: inset 0 0 0 2px rgba($color__secondary, 0);
+	transition: all 300ms linear;
+	cursor: pointer;
+	img{
+		position: relative;
+		max-width: 100%;
+		opacity: 1;
+		transition: all 300ms linear;
+		z-index: -1;
+	}
+	&:hover{
+		box-shadow: inset 0 0 0 2px $color__secondary;
+	}
+	.slick-current &{
+		box-shadow: inset 0 0 0 2px $color__secondary;
+		img{
+			opacity: 0.5;
+		}
+	}
+}
+
+.album__controls{
+  position: absolute;
+  right: 0px; top: -40px;
+  z-index: 100;
+  width: 51px;
+  display: flex;
+  justify-content: space-between;
+}
+.album__controls-prev,
+.album__controls-next{
+  outline: none;
+  padding: 0;
+  border: 0;
+	background-color: transparent;
+	&.slick-disabled{
+		opacity: 0.5;
+	}
+}

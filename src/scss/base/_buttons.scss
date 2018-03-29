@@ -1,0 +1,34 @@
+/**
+ *
+ * buttons
+ *
+ **/
+.btn{
+	display: inline-block;
+	min-width: 180px;
+	padding: 6px 12px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	border: 2px solid;
+	outline: none;
+	background: transparent;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+}
+.btn--wide{
+	min-width: 280px;
+}
+.btn--large{
+	padding: 15px 30px;
+}
+.btn--primary{
+	border: 2px solid $color__primary;
+	background: $color__primary;
+	color: #ffffff;
+}
+.btn--secondary{
+	color: $color__secondary;
+}
