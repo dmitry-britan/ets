@@ -1,0 +1,69 @@
+.popup{
+	position: relative;
+}
+.popup__close{
+	position: absolute;
+	top: -24px; right: -24px;
+	width: 20px; height: 20px;
+	cursor: pointer;
+	&:after{
+		content: '';
+		@include sprite('close');
+	}
+}
+.popup__inner{
+	width: 580px;
+	padding: 35px 90px;
+	background-color: #ffffff;
+	&.is--wide{
+		width: 960px;
+	}
+	@include media('<680px'){
+		width: 420px;
+		padding: 55px 30px 35px;
+	}
+	@include media('<480px'){
+		width: 270px;
+		padding: 35px 15px 25px;
+	}
+}
+.popup__header{
+	margin: 0 0 20px;
+	@include VolvoBroadPro();
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #010101;
+	@include media('<600px'){
+		margin-bottom: 22px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	@include media('<480px'){
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+.popup__body{
+		&, p{
+		margin: 0;
+		padding-bottom: 20px;
+		font-size: 21px;
+		font-weight: 300;
+		line-height: 36px;
+		color: $color__base;
+		@include media('<680px'){
+			font-size: 16px;
+			line-height: 24px;
+		}
+		@include media('<480px'){
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+.popup__footer{
+	text-align: center;
+}

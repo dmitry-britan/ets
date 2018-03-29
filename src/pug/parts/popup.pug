@@ -1,0 +1,57 @@
+div(style='display: none;')
+	//- Callback
+	#callback.popup
+		.popup__close.arcticmodal-close
+		.popup__inner
+			.popup__header Заказать звонок
+			.popup__body
+				form.form(action="").js-form-callback
+					.form__row.is--margin-small
+						.form__field
+							label.form__label Имя
+							input(type="text", name="name").form__input
+						.form__field
+							label.form__label Телефон
+							input(type="text", name="phone").form__input
+			.popup__footer
+				button(type="submit").btn.btn--secondary Отправить
+
+	//- Leave an order
+	#order.popup
+		.popup__close.arcticmodal-close
+		.popup__inner
+			.popup__header Оставить заявку
+			.popup__body
+				form.form(action="").js-form-order
+					.form__row.is--margin-small
+						.form__field.form__field--select
+							select(name="reason")
+								option(disabled selected) Причина обращения
+								option(value="1") Причина 1
+								option(value="2") Причина 2
+								option(value="3") Причина 3
+						.form__field
+							label.form__label Имя
+							input(type="text", name="name").form__input
+						.form__field
+							label.form__label Предприятие
+							input(type="text", name="company").form__input
+						.form__field
+							label.form__label Телефон
+							input(type="text", name="phone").form__input
+						.form__field
+							label.form__label Email
+							input(type="email", name="email").form__input
+			.popup__footer
+				button(type="submit").btn.btn--secondary Отправить
+
+	//- Thank You!
+	#thanks.popup
+		.popup__close.arcticmodal-close
+		.popup__inner
+			.popup__header Спасибо!
+			.popup__body
+				p.is--text-center
+					| Текст
+			.popup__footer
+				a(href="").btn.btn--primary Кнопка

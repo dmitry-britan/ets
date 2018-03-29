@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>
     </title>
-    <link rel="stylesheet" href="css/main.css?v=1522311665989">
+    <link rel="stylesheet" href="css/main.css?v=1522349492842">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -50,7 +50,7 @@
             <div class="header__phones">
               <div class="phones"><a class="phones__item" href="tel:+">0 800 300 771</a><a class="phones__item" href="tel:+">(067) 353 56 94</a></div>
             </div>
-            <div class="header__callback"><a class="callback" href="">Заказать звонок</a></div>
+            <div class="header__callback"><a class="callback" href="" data-modal="callback">Заказать звонок</a></div>
           </div>
         </div>
       </div>
@@ -337,7 +337,81 @@
         </div>
       </div>
     </footer>
-    <script src="js/vendor.js?v=1522311665991"></script>
-    <script src="js/main.js?v=1522311665991"></script>
+    <div style="display: none;">
+      <div class="popup" id="callback">
+        <div class="popup__close arcticmodal-close"></div>
+        <div class="popup__inner">
+          <div class="popup__header">Заказать звонок</div>
+          <div class="popup__body">
+            <form class="form js-form-callback" action="">
+              <div class="form__row is--margin-small">
+                <div class="form__field">
+                  <label class="form__label">Имя</label>
+                  <input class="form__input" type="text" name="name">
+                </div>
+                <div class="form__field">
+                  <label class="form__label">Телефон</label>
+                  <input class="form__input" type="text" name="phone">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="popup__footer">
+            <button class="btn btn--secondary" type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="order">
+        <div class="popup__close arcticmodal-close"></div>
+        <div class="popup__inner">
+          <div class="popup__header">Оставить заявку</div>
+          <div class="popup__body">
+            <form class="form js-form-order" action="">
+              <div class="form__row is--margin-small">
+                <div class="form__field form__field--select">
+                  <select name="reason">
+                    <option disabled selected>Причина обращения</option>
+                    <option value="1">Причина 1</option>
+                    <option value="2">Причина 2</option>
+                    <option value="3">Причина 3</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <label class="form__label">Имя</label>
+                  <input class="form__input" type="text" name="name">
+                </div>
+                <div class="form__field">
+                  <label class="form__label">Предприятие</label>
+                  <input class="form__input" type="text" name="company">
+                </div>
+                <div class="form__field">
+                  <label class="form__label">Телефон</label>
+                  <input class="form__input" type="text" name="phone">
+                </div>
+                <div class="form__field">
+                  <label class="form__label">Email</label>
+                  <input class="form__input" type="email" name="email">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="popup__footer">
+            <button class="btn btn--secondary" type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="thanks">
+        <div class="popup__close arcticmodal-close"></div>
+        <div class="popup__inner">
+          <div class="popup__header">Спасибо!</div>
+          <div class="popup__body">
+            <p class="is--text-center">Текст</p>
+          </div>
+          <div class="popup__footer"><a class="btn btn--primary" href="">Кнопка</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.js?v=1522349492844"></script>
+    <script src="js/main.js?v=1522349492844"></script>
   </body>
 </html>

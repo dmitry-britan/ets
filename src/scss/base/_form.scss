@@ -120,6 +120,7 @@ textarea {
   .is--flex &{
     margin-left: 20px;
   }
+  .is--margin-small &,
   &.with--file{
     margin-bottom: 20px;
   }
@@ -190,20 +191,22 @@ textarea {
 }
 .form__field--select {
   position: relative;
+  max-width: 400px;
   background: #fff;
   z-index: 2;
   &:after {
     content: ''; 
-  //  @include sprite('arrow-down-md');
+    @include sprite('select');
     position: absolute;
     right: 12px;
-    top: 17px;
+    top: 28px;
     z-index: -1;
   }
   select {
     width: 100%;
     padding-right: 50px;
     background: transparent;
+    appearance: none;
   }
 }
 
