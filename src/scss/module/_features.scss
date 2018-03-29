@@ -12,6 +12,7 @@
   &-inner{
     padding: 20px 30px;
     border: 1px solid $color__third;
+    transition: all 300ms linear;
 
     &:hover{
       border: 1px solid #bbbbbb;

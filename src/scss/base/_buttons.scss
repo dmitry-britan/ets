@@ -4,6 +4,8 @@
  *
  **/
 .btn{
+	position: relative;
+	overflow: hidden;
 	display: inline-block;
 	min-width: 180px;
 	padding: 6px 12px;
@@ -16,10 +18,49 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
+	transition: all 200ms linear;
 	cursor: pointer;
+	z-index: 0;
+	
+  &:after, 
+  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 1;
+      z-index: -1;
+  }
+  &:after{
+    opacity: 1;
+    transform: translate3d(100%,0,0);
+    transition: transform .7s cubic-bezier(.165,.84,.44,1);
+  }
+  &:before{
+    transition: none;
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+  }
+  &:hover{
+    &:after{
+      transition: none;
+      opacity: 0;
+      transform: translate3d(0%,0,0);
+    }
+    &:before{
+      opacity: 1;
+      transition: transform .7s cubic-bezier(.165,.84,.44,1);
+      transform: translate3d(0,0,0);
+    }
+  }
 }
 .btn--wide{
 	min-width: 280px;
+}
+.btn--wide-l{
+	min-width: 380px;
 }
 .btn--large{
 	padding: 15px 30px;
@@ -28,7 +69,36 @@
 	border: 2px solid $color__primary;
 	background: $color__primary;
 	color: #ffffff;
+	&:hover{
+		color: $color__primary;
+	}
+	&:after, 
+  &:before {
+		background: #fff;
+	}
 }
 .btn--secondary{
+	border: 2px solid $color__secondary;
 	color: $color__secondary;
+	&:hover{
+		border: 2px solid $color__secondary;
+		color: #ffffff;
+	}
+	&:after, 
+  &:before {
+		background: $color__secondary;
+	}
+}
+.btn--white{
+	border: 2px solid #ffffff;
+	background: transparent;
+	color: #ffffff;
+	&:hover{
+		border: 2px solid $color__primary;
+		color: #fff;
+	}
+	&:after, 
+  &:before {
+		background: $color__primary;
+	}
 }
