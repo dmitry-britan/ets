@@ -13,6 +13,9 @@
   @include media('<800px'){
     width: percentage(1/2);
   }
+  @include media('<480px'){
+    width: percentage(1/1);
+  }
 
   &-inner{
     padding: 20px 30px;

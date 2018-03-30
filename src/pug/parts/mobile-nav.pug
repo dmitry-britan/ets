@@ -12,62 +12,95 @@ nav.mobile-nav
         a(href="#search")
           i.icon.icon--search
     .mobile-nav__block
-      h4.mobile-nav__title О комплексе
+      h4.mobile-nav__title О компании
       ul.mobile-nav__list
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') О нас
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Наша команда
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Лицензии МОЗ
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Подарочные сертификаты
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Программа лояльности
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Правила комплекса
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') События
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Партнеры
+        -
+          var links = [
+            {title: 'О компании', url: 'about.html'},
+            {title: 'Новости и Акции', url: 'news.html'},
+            {title: 'Вакансии', url: 'career.html'},
+            {title: 'Фотогалерея', url: 'gallery.html'},
+            {title: 'Контакты', url: 'contacts.html'},
+          ];
+        each link in links
+          li.mobile-nav__item
+            a(href=link.url).mobile-nav__link= link.title
         
     .mobile-nav__block
-      h4.mobile-nav__title Лечение
+      h4.mobile-nav__title Каталог
       ul.mobile-nav__list
+        li.mobile-nav__item.with-sub
+          a(href="" class="mobile-nav__link") 
+            | Каталог техники
+          i.fa.fa-angle-down
+          .mobile-nav__sub
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Бренды
+              ul.mobile-nav__sub-list
+                -var links = ['Volvo ce','Terex trucks','Sennebogen','Faresin','Goldhofer','SDLG']
+                each link in links
+                  li.mobile-nav__sub-item
+                    a(href="").mobile-nav__sub-link= link
+        li.mobile-nav__item.with-sub
+          a(href="" class="mobile-nav__link") 
+            | Техника по назначению
+          i.fa.fa-angle-down
+          .mobile-nav__sub
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Строительная техника
+              ul.mobile-nav__sub-list
+                -var links = ['Экскаваторы','Погрузчики','Самосвалы']
+                each link in links
+                  li.mobile-nav__sub-item
+                    a(href="").mobile-nav__sub-link= link
+                    
+              a(href="").mobile-nav__sub-header Подъемные краны
+              ul.mobile-nav__sub-list
+                -var links = ['Краны экскаваторы','Гусеничные краны','Телескопические краны','Портовые краны','Электрические краны','Краны Senhebohen']
+                each link in links
+                  li.mobile-nav__sub-item
+                    a(href="").mobile-nav__sub-link= link
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Дорожно-строительная техника
+              ul.mobile-nav__sub-list
+                -var links = ['Грейдеры','Катки ','Дорожные фрезы Volvo','Асфальтоукладчики Volvo','Выглаживающие плиты']
+                each link in links
+                  li.mobile-nav__sub-item
+                    a(href="").mobile-nav__sub-link= link
+              a(href="").mobile-nav__sub-header Сельскохозяйственная техника
+              ul.mobile-nav__sub-list
+                -var links = ['Телескопические погрузчики','Фронтальные погрузчики','Кормораздатчики','Volvo','Faresin']
+                each link in links
+                  li.mobile-nav__sub-item
+                    a(href="").mobile-nav__sub-link= link
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Карьерная техника
+              ul.mobile-nav__sub-list
+                -var links = ['Самосвалы с жесткой рамой','Шарнирно-сочлененные самосвалы','Экскаваторы','Бульдозеры','Фронтальные погрузчики','Автогрейдеры','Навесное оборудование','Volvo','Terex Trucks','Sennebogen','Faresin']
+                each link in links
+                  li.mobile-nav__sub-item
+                    a(href="").mobile-nav__sub-link= link
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Тралы
+              ul.mobile-nav__sub-list
+                -var links = ['Goldhofer']
+                each link in links
+                  li.mobile-nav__sub-item
+                    a(href="").mobile-nav__sub-link= link
         li.mobile-nav__item
-          a.mobile-nav__link(href='') Гастроэнтерология
+          a(href="" class="mobile-nav__link") Техника с наработкой
+        li.mobile-nav__item.with-sub
+          a(href="" class="mobile-nav__link") 
+            | Сервис
+          i.fa.fa-angle-down
+          .mobile-nav__sub
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Запчасти
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Сервис
+            .mobile-nav__sub-block
+              a(href="").mobile-nav__sub-header Сервисные центры
         li.mobile-nav__item
-          a.mobile-nav__link(href='') Лечение позвоночника и суставов
+          a(href="" class="mobile-nav__link") Шиномонтаж
         li.mobile-nav__item
-          a.mobile-nav__link(href='') Профилактика заболеваний органов дыхания
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Профилактика заболеваний нервной системы
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Профилактика аллергий 
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Лечение водой "Поляна квасова"
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Правила для пациентов
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Противопоказания
-        
-      h4.mobile-nav__title Корпоративным клиентам
-      ul.mobile-nav__list
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Конференции и семинары
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Корпоративное оздоровление
-
-    .mobile-nav__block.is--no-title
-      
-      ul.mobile-nav__list.is--special
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Галерея
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Это интересно
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Отзывы о нас
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Он-лайн консультация врача
-        li.mobile-nav__item
-          a.mobile-nav__link(href='') Контакты
+          a(href="" class="mobile-nav__link") Operators Club

@@ -200,6 +200,11 @@ if ($('.js-slider-assortment').length) {
 			settings: {
 				slidesToShow: 2
 			}
+		}, {
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1
+			}
 		}]
 	});
 }
@@ -271,6 +276,19 @@ if ($('.js-slider-product-single').length) {
 		prevArrow: $('.js-product-single-slider-prev')
 	});
 }
+
+(function() {
+	if (!$('.mobile-nav').length) {
+		return false;
+	}
+
+	$('.mobile-nav').find('i').each(function(index, element) {
+		$(element).on('click', function(event) {
+			$(event.currentTarget).parent().toggleClass('is--open');
+			$(event.currentTarget).parent().find('.mobile-nav__sub').slideToggle();
+		});
+	});
+})();
 
 //
 // Modal Popup

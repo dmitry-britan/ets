@@ -8,6 +8,10 @@
   align-items: flex-start;
   padding: 24px 0 27px;
   margin-left: -20px;
+  @include media('<480px'){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__menu{
   width: percentage(1/4);
@@ -17,11 +21,29 @@
     padding: 0 10%;
     margin-bottom: 20px;
   }
+  @include media('<480px'){
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
 }
 .footer__bottom-inner{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 23px 0;
   border-top: 1px solid #e1e1e1;
+  @include media('<480px'){
+    flex-direction: column-reverse;
+  }
+}
+.footer__copyrights,
+.footer__logo{
+  @include media('<480px'){
+    width: percentage(1/1);
+    padding: 0 10%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }

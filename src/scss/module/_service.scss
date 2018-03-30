@@ -11,6 +11,7 @@
   margin-bottom: 54px;
   display: block;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   margin-left: -20px;
@@ -18,6 +19,11 @@
 .service__item{
   width: percentage(1/3);
   padding-left: 20px;
+
+  @include media('<960px'){
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .service__item-inner{
   position: relative;
@@ -25,26 +31,30 @@
   height: 467px;
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @include media('<960px'){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 30px;
+    background-size: cover;
+  }
 }
 .service__action{
   position: absolute;
   bottom: 33px;
   left: 50px; right: 50px;
-  padding: 7px 15px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 36px;
-  border: 2px solid $color__secondary;
+  min-width: 180px;
   background-color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: $color__secondary;
-  transition: all 300ms linear;
-
-    &:hover{
-      color: #fff;
-      background-color: $color__secondary;
+  @include media('<960px'){
+    position: relative;
+    left: auto; right: auto;
+    bottom: auto;
+    min-width: 280px;
+  }
+  @include media('<600px'){
+    min-width: 180px;
   }
 }
 

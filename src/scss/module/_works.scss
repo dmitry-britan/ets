@@ -1,15 +1,24 @@
 .works{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	margin-left: -20px;
 }
 .works__item{
 	width: percentage(1/4);
 	padding-left: 20px;
-	margin-bottom: 30px;
+	margin: 0 auto 20px;
+	@include media('<900px'){
+		width: percentage(1/2);
+	}
+	@include media('<600px'){
+		width: percentage(1/1);
+	}
 }
 .works__item-photo{
 	display: block;
+	max-width: 280px;
+	margin: 0 auto;
 	position: relative;
 	text-decoration: none;
 	img{

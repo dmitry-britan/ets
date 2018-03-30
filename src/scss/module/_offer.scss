@@ -41,19 +41,7 @@
 }
 .offer__action{
   margin: 0 0 16px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 36px;
-  border: 2px solid #fff;
-  padding: 7px 97px;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-  transition: all 300ms linear;
-
-  &:hover{
-    border: 2px solid $color__primary;
-    background-color: $color__primary;
-    color: #fff;
+  @include media('<600px'){
+    min-width: 180px;
   }
 }

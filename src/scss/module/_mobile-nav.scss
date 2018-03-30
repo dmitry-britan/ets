@@ -21,13 +21,13 @@ body.is--mobile-active{
   }
 }
 .mobile-nav{
-  height: 100%;
+  min-height: 100%;
   padding: 30px 20px;
+  background: $color__third;
 }
 .mobile-nav__inner{
   display: flex;
   flex-direction: column;
-  background: #fff;
 }
 .mobile-nav__header{
   display: flex;
@@ -41,34 +41,25 @@ body.is--mobile-active{
 }
 .mobile-nav__block-title-link{
   display: block;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 26px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: $color__base;
   &:hover{
     color: $color__primary;
   }
 }
 .mobile-nav__list{
-  @extend %list;
-  position: relative;
-  margin-bottom: 30px;
-
-  .is--two-column &{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 .mobile-nav__item{
   position: relative;
   display: block;
   padding-right: 20px;
-  .is--two-column &{
-    width: percentage(1/2);
-  }
   i{
     position: absolute;
     right: 0; top: 0;
@@ -76,22 +67,48 @@ body.is--mobile-active{
     line-height: 21px;
     text-align: center;
     cursor: pointer;
+    transition: transform 300ms linear;
   }
+}
+.is--open > i{
+  transform: rotate(180deg);
 }
 .mobile-nav__link{
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  color: #6f6e72;
+  color: $color__base;
   text-decoration: none;
   &:hover,
   .mobile-nav__item.is--current &{
-    color: $color__primary;
+    color: $color__secondary;
   }
 }
-
-.mobile-nav__footer{
-  display: flex;
-  justify-content: space-between;
+.mobile-nav__sub{
+  display: none;
+}
+.mobile-nav__sub-block{
+  margin-left: 10px;
+}
+.mobile-nav__sub-header{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $color__secondary;
+  text-decoration: none;
+}
+.mobile-nav__sub-list{
+  padding: 0;
+  margin: 0 0 0 20px;
+  list-style: none;
+}
+.mobile-nav__sub-link{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $color__gray;
+  text-decoration: none;
 }

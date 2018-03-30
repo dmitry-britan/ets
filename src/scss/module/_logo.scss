@@ -2,4 +2,11 @@
   &, img {
     display: block;
   }
+  &--bottom{
+    @include media('<480px'){
+      img{
+        margin: 0 auto;
+      }
+    }
+  }
 }

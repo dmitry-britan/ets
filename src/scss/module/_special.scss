@@ -3,15 +3,18 @@
   margin: 0 auto 46px;
 }
 .special__item{
-  min-height: 252px;
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .special__content{
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  min-height: 252px;
+  @include media('<480px'){
+    justify-content: space-around;
+  }
 }
 .special__title{
   margin: 26px 0 11px 0;
@@ -19,8 +22,19 @@
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
   color: $color__base;
   @include VolvoBroadPro();
+  @include media('<600px'){
+    margin: 16px 0;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  @include media('<480px'){
+    margin: 10px 0;
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 .special__body{
   max-width: 350px;
@@ -31,6 +45,16 @@
   text-align: center;
   text-transform: uppercase;
   color: $color__base;
+  @include media('<600px'){
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  @include media('<480px'){
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .special__details{
   margin: 0;
@@ -39,21 +63,19 @@
   line-height: 24px;
   text-align: center;
   color: $color__gray;
+  @include media('<600px'){
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 .special__action{
   margin: 0 0 16px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  border: 2px solid $color__secondary;
-  padding: 14px 72px;
-  text-transform: uppercase;
-  color: $color__secondary;
-  text-decoration: none;
-  transition: all 300ms linear;
-
-  &:hover{
-    background-color: $color__secondary;
-    color: #fff;
+  @include media('<600px'){
+    min-width: 180px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  @include media('<480px'){
+    margin-bottom: 10px;
   }
 }
