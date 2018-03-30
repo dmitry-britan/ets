@@ -9,6 +9,12 @@
   width: percentage(1/6);
   padding-left: 20px;
   margin-bottom: 22px;
+  @include media('<1140px'){
+    width: percentage(1/3);
+  }
+  img{
+    max-width: 100%;
+  }
 }
 .gallery__item-inner{
   position: relative;

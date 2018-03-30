@@ -27,17 +27,22 @@ header.header
         .header__search
           a(href="#search")
             i.icon.icon--search
-          include header/search-modal
 
   .header__bottom
     .container
       .header__bottom-inner
+        .header__mobile-menu
+          .hamburger.hamburger--spin.js-nav-toggle
+            .hamburger__box
+              .hamburger__inner
         .header__logo
           include header/logo
         .header__phones
           include header/phones
         .header__callback
           include header/callback
+  // SEARCH POPUP
+  include header/search-modal
 
 // NAVIGATION
 include header/nav

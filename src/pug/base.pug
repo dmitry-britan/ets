@@ -46,7 +46,7 @@ block vars
 			twitterTitle: title,
 			twitterDescription: description,
 			twitterImage: image,
-			viewport: 'width=device-width',
+			viewport: 'width=device-width, initial-scale=1.0, user-scalable=no',
 			XUACompatible: 'IE=edge'
 		}
 	-
@@ -242,13 +242,17 @@ html(class=html.classList)&attributes(html.attrs)
 			if link.maskIcon.href
 				link(rel="mask-icon" href=link.maskIcon.href color=link.maskIcon.color)
 			link(rel="stylesheet" href="css/main.css?v=" + Date.now())
-		link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet")
+			link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet")
 		block head-end
-	body(class=body.classList)&attributes(body.attrs)
+	body(class=body.classList+' site')&attributes(body.attrs)
 		block body-start
-		include header.pug
-		block content
-		include footer.pug
+		.site__content
+			include header.pug
+			block content
+			include footer.pug
+		.site__menu
+			include parts/mobile-nav
+
 		block scripts
 			script(src="js/vendor.js?v=" + Date.now())
 			script(src="js/main.js?v=" + Date.now())

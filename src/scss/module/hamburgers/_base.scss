@@ -18,6 +18,10 @@
   margin: 0;
   overflow: visible;
 
+  @include media('<600px'){
+    padding: 0;
+  }
+
   &:hover {
     @if $hamburger-hover-use-filter == true {
       filter: $hamburger-hover-filter;

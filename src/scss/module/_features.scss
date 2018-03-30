@@ -1,5 +1,6 @@
 .features{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-left: -20px;
@@ -7,7 +8,11 @@
 .features__item{
   width: percentage(1/4);
   padding-left: 20px;
+  margin-bottom: 20px;
   text-align: center;
+  @include media('<800px'){
+    width: percentage(1/2);
+  }
 
   &-inner{
     padding: 20px 30px;

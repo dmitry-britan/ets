@@ -1,12 +1,13 @@
 .langs{}
 .langs__list{
 	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
 }
 .langs__item{
 	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 100;
@@ -14,7 +15,7 @@
 
 	&:before{
 		display: inline-block;
-		padding: 0 2px;
+		padding: 0 4px;
 		content: '|';
 		font-weight: 100;
 		color: #a2a2a2;
@@ -25,7 +26,6 @@
 	}
 }
 .langs__link{
-	padding-left: 4px;
 	font-weight: 300;
 	font-size: 16px;
 	text-decoration: none;

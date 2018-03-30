@@ -23,6 +23,20 @@ if ($('.js-slider-assortment').length) {
     slidesToScroll: 1,
     nextArrow: $('.js-assortment-slider-next'),
     prevArrow: $('.js-assortment-slider-prev'),
+		responsive: [
+			{
+				breakpoint: 1210,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+		],
   });
 }
 
@@ -49,6 +63,26 @@ if ($('.js-slider-album').length) {
     focusOnSelect: true,
     nextArrow: $('.js-album-slider-next'),
     prevArrow: $('.js-album-slider-prev'),
+		responsive: [
+			{
+				breakpoint: 1100,
+				settings: {
+					slidesToShow: 5,
+				},
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 4,
+				},
+			},
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+		],
   });
 }
 

@@ -3,818 +3,884 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>
     </title>
-    <link rel="stylesheet" href="css/main.css?v=1522360955210">
+    <link rel="stylesheet" href="css/main.css?v=1522418863531">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-inner">
-            <div class="header__menu">
-              <div class="top-menu">
-                <ul class="top-menu__list">
-                  <li class="top-menu__item"><a class="top-menu__link" href="about.html">О компании</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="news.html">Новости и Акции</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="career.html">Вакансии</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="gallery.html">Фотогалерея</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="contacts.html">Контакты</a></li>
+  <body class=" site">
+    <div class="site__content">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__menu">
+                <div class="top-menu">
+                  <ul class="top-menu__list">
+                    <li class="top-menu__item"><a class="top-menu__link" href="about.html">О компании</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="news.html">Новости и Акции</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="career.html">Вакансии</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="gallery.html">Фотогалерея</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="contacts.html">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__langs">
+                <ul class="langs__list">
+                  <li class="langs__item"><a class="langs__link " href="">UA</a></li>
+                  <li class="langs__item"><a class="langs__link is--current" href="">RU</a></li>
+                  <li class="langs__item"><a class="langs__link " href="">EN</a></li>
                 </ul>
               </div>
+              <div class="header__search"><a href="#search"><i class="icon icon--search"></i></a></div>
             </div>
-            <div class="header__langs">
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <div class="header__mobile-menu">
+                <div class="hamburger hamburger--spin js-nav-toggle">
+                  <div class="hamburger__box">
+                    <div class="hamburger__inner"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__logo"><a class="logo" href="index.html"><img src="images/logo.png" alt=""></a></div>
+              <div class="header__phones">
+                <div class="phones"><a class="phones__item" href="tel:+">0 800 300 771</a><a class="phones__item" href="tel:+">(067) 353 56 94</a></div>
+              </div>
+              <div class="header__callback"><a class="callback btn btn--large btn--wide btn--secondary" href="" data-modal="callback"> <span>Заказать звонок</span><i class="fa fa-phone"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- SEARCH POPUP-->
+        <div class="search-modal">
+          <form class="search-modal__form">
+            <input class="search-modal__input" type="search" value="" placeholder="Поиск" name="search">
+            <button class="search-modal__btn" type="submit">Найти</button>
+          </form>
+        </div>
+      </header>
+      <!-- NAVIGATION-->
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__inner">
+            <ul class="nav__list">
+              <li class="nav__item with-sub"><a class="nav__link" href="">
+                   Каталог техники<i class="icon icon--arrow-down"></i></a>
+                <div class="nav__sub">
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Бренды</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo ce</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex trucks</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">SDLG</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item with-sub"><a class="nav__link" href="">
+                   Техника по назначению<i class="icon icon--arrow-down"></i></a>
+                <div class="nav__sub">
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Строительная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы</a></li>
+                    </ul><a class="nav__sub-header" href="">Подъемные краны</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны экскаваторы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Гусеничные краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Портовые краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Электрические краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны Senhebohen</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Дорожно-строительная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Грейдеры</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Катки </a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Дорожные фрезы Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Асфальтоукладчики Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Выглаживающие плиты</a></li>
+                    </ul><a class="nav__sub-header" href="">Сельскохозяйственная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Кормораздатчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Карьерная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы с жесткой рамой</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Шарнирно-сочлененные самосвалы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Бульдозеры</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Автогрейдеры</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Навесное оборудование</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex Trucks</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Тралы</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="">Техника с наработкой</a></li>
+              <li class="nav__item with-sub"><a class="nav__link" href="">
+                   Сервис<i class="icon icon--arrow-down"></i></a>
+                <div class="nav__sub">
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Запчасти</a></div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервис</a></div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервисные центры</a></div>
+                </div>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="">Шиномонтаж</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Operators Club</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Каталог техники</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Подъемные кран</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Краны Sennebogen</a></li>
+          </ul>
+        </div>
+        <h1 class="page__title">Краны Sennebogen</h1>
+      </div>
+      <div class="section section--catalogue">
+        <div class="container">
+          <div class="catalogue">
+            <aside class="catalogue__filter">
+              <div class="widget">
+                <div class="widget__header">Искать по названию</div>
+                <div class="widget__body">
+                  <form class="search">
+                    <input class="search__input" type="search" value="" placeholder="Поиск" name="search">
+                    <button class="search__btn" type="submit">OK</button>
+                  </form>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget__header with--icon"><span>Вы выбрали</span>
+                  <button class="widget__action" type="reset" form="checked"><i class="icon icon--reset"></i></button>
+                </div>
+                <div class="widget__body">
+                  <form class="form is--filtered" id="checked">
+                    <div class="form__row">
+                      <div class="form__title">Бренд</div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="b-1" type="checkbox" name="b-1" checked>
+                        <label for="b-1">Sennebogen</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget__header">Фильтры</div>
+                <div class="widget__body">
+                  <form class="form is--filter">
+                    <div class="form__row">
+                      <div class="form__title">Бренды</div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="brand-1" type="checkbox" name="brand-1">
+                        <label for="brand-1">Volvo ce</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="brand-2" type="checkbox" name="brand-2">
+                        <label for="brand-2">Terex trucks</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="brand-3" type="checkbox" name="brand-3">
+                        <label for="brand-3">Faresin</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="brand-4" type="checkbox" name="brand-4">
+                        <label for="brand-4">Goldhofer</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="brand-5" type="checkbox" name="brand-5">
+                        <label for="brand-5">SDLG</label>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__title">Грузоподъемность</div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="carrying-1" type="checkbox" name="carrying-1">
+                        <label for="carrying-1">до 10 т</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="carrying-2" type="checkbox" name="carrying-2">
+                        <label for="carrying-2">до 50 т</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="carrying-3" type="checkbox" name="carrying-3">
+                        <label for="carrying-3">до 100 т</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="carrying-4" type="checkbox" name="carrying-4">
+                        <label for="carrying-4">до 150 т</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="carrying-5" type="checkbox" name="carrying-5">
+                        <label for="carrying-5">до 200 т</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="carrying-6" type="checkbox" name="carrying-6">
+                        <label for="carrying-6">до 250 т</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="carrying-7" type="checkbox" name="carrying-7">
+                        <label for="carrying-7">до 300 т</label>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__title">Мах высота стрелы</div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-1" type="checkbox" name="boom-1">
+                        <label for="boom-1">до 20 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-2" type="checkbox" name="boom-2">
+                        <label for="boom-2">до 30 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-3" type="checkbox" name="boom-3">
+                        <label for="boom-3">до 40 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-4" type="checkbox" name="boom-4">
+                        <label for="boom-4">до 50 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-5" type="checkbox" name="boom-5">
+                        <label for="boom-5">до 60 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-6" type="checkbox" name="boom-6">
+                        <label for="boom-6">до 70 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-7" type="checkbox" name="boom-7">
+                        <label for="boom-7">до 80 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-8" type="checkbox" name="boom-8">
+                        <label for="boom-8">до 90 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-9" type="checkbox" name="boom-9">
+                        <label for="boom-9">до 100 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="boom-10" type="checkbox" name="boom-10">
+                        <label for="boom-10">до 114 м</label>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__title">Мах высота гуська</div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-1" type="checkbox" name="jib-1">
+                        <label for="jib-1">до 60 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-2" type="checkbox" name="jib-2">
+                        <label for="jib-2">до 70 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-3" type="checkbox" name="jib-3">
+                        <label for="jib-3">до 80 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-4" type="checkbox" name="jib-4">
+                        <label for="jib-4">до 90 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-5" type="checkbox" name="jib-5">
+                        <label for="jib-5">до 100 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-6" type="checkbox" name="jib-6">
+                        <label for="jib-6">до 110 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-7" type="checkbox" name="jib-7">
+                        <label for="jib-7">до 120 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-8" type="checkbox" name="jib-8">
+                        <label for="jib-8">до 130 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-9" type="checkbox" name="jib-9">
+                        <label for="jib-9">до 140 м</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="jib-10" type="checkbox" name="jib-10">
+                        <label for="jib-10">до 154 м</label>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__title">Мощьность двигателя</div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-1" type="checkbox" name="power-1">
+                        <label for="power-1">до 100 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-2" type="checkbox" name="power-2">
+                        <label for="power-2">100 – 150 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-3" type="checkbox" name="power-3">
+                        <label for="power-3">150 – 250 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-4" type="checkbox" name="power-4">
+                        <label for="power-4">250 – 350 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-5" type="checkbox" name="power-5">
+                        <label for="power-5">350 – 450 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-6" type="checkbox" name="power-6">
+                        <label for="power-6">450 – 550 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-7" type="checkbox" name="power-7">
+                        <label for="power-7">550 – 650 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-8" type="checkbox" name="power-8">
+                        <label for="power-8">650 – 750 кВТ</label>
+                      </div>
+                      <div class="form__field with-checkbox">
+                        <input class="form__checkbox" id="power-9" type="checkbox" name="power-9">
+                        <label for="power-9">750 – 850 кВТ</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </aside>
+            <main class="catalogue__body">
+              <div class="catalogue__products">
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product">
+                  <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
+                    <div class="product__body">
+                      <h3 class="product__title">Кран-экскаватор 300 т</h3>
+                      <ul class="product__specifications">
+                        <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
+                          кг
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
+                          кВт
+                        </li>
+                        <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
+                          м<sup>3</sup>
+                        </li>
+                      </ul>
+                      <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="catalogue__action"><a class="btn btn--secondary btn--wide btn--large" href="">Загрузить еще</a></div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div class="section section--seo">
+        <div class="container">
+          <h2 class="section__title">СОЗДАНЫ VOLVO ДЛЯ МАШИН VOLVO</h2>
+          <div class="section__text">
+            <p>Volvo понимает, что новая машина - не всегда идеальное решение для бизнеса конкретного клиента. Наши услуги восстановления техники дают клиентам Volvo широкие возможности выбора решений для восстановления идеального технического состояния машин Volvo - от восстановленных на заводе комплектующих до капитального ремонта всей машины и гибких пакетных предложений. Давая технике Volvo заслуженную новую жизнь, услуги восстановления Volvo оптимизируют долгосрочную эффективность ваших инвестиций и общую стоимость владения.        p Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
+            <p>Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
+            <p>Широкий ассортимент навесного оборудования Volvo позволяет каждому клиенту выбрать наиболее подходящий вариант для эффективной работы машин. Все части машины важны; навесное оборудование Volvo, специально разработанное для техники Volvo, образует с ней единый безопасный и надежный механизм с высокой скоростью работы, высокой топливной экономичностью и низкой стоимостью владения.</p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__top-inner">
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">Call center</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link menu__link--phone" href="">0 800 300 771</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--phone" href="">(067) 353 56 94</a></li>
+                  </ul>
+                </article>
+              </div>
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">О компании ETS</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="">О компании</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Новости и Акции</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Вакансии</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+                  </ul>
+                </article>
+              </div>
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">Каталог</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="">Каталог техники</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">техника по назначению</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">техника с наработкой</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Бренды</a></li>
+                  </ul>
+                </article>
+              </div>
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">Услуги</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="">шиномонтаж</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Operators club</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">сервис</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">фотогалерея</a></li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <div class="footer__copyrights">
+                <div class="copyrights">© Copyright ETS-Group.com.ua 2017</div>
+              </div>
+              <div class="footer__logo"><a class="logo logo--bottom" href=""><img src="images/logo-bottom.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div style="display: none;">
+        <div class="popup" id="callback">
+          <div class="popup__close arcticmodal-close"></div>
+          <div class="popup__inner">
+            <div class="popup__header">Заказать звонок</div>
+            <div class="popup__body">
+              <form class="form js-form-callback" action="">
+                <div class="form__row is--margin-small">
+                  <div class="form__field">
+                    <label class="form__label">Имя</label>
+                    <input class="form__input" type="text" name="name">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Телефон</label>
+                    <input class="form__input" type="text" name="phone">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="popup__footer">
+              <button class="btn btn--secondary" type="submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="order">
+          <div class="popup__close arcticmodal-close"></div>
+          <div class="popup__inner">
+            <div class="popup__header">Оставить заявку</div>
+            <div class="popup__body">
+              <form class="form js-form-order" action="">
+                <div class="form__row is--margin-small">
+                  <div class="form__field form__field--select">
+                    <select name="reason">
+                      <option disabled selected>Причина обращения</option>
+                      <option value="1">Причина 1</option>
+                      <option value="2">Причина 2</option>
+                      <option value="3">Причина 3</option>
+                    </select>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Имя</label>
+                    <input class="form__input" type="text" name="name">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Предприятие</label>
+                    <input class="form__input" type="text" name="company">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Телефон</label>
+                    <input class="form__input" type="text" name="phone">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Email</label>
+                    <input class="form__input" type="email" name="email">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="popup__footer">
+              <button class="btn btn--secondary" type="submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="thanks">
+          <div class="popup__close arcticmodal-close"></div>
+          <div class="popup__inner">
+            <div class="popup__header">Спасибо!</div>
+            <div class="popup__body">
+              <p class="is--text-center">Текст</p>
+            </div>
+            <div class="popup__footer"><a class="btn btn--primary" href="">Кнопка</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site__menu">
+      <!-- MENU-->
+      <nav class="mobile-nav">
+        <div class="mobile-nav__inner">
+          <div class="mobile-nav__header">
+            <div class="mobile-nav__header-langs">
               <ul class="langs__list">
                 <li class="langs__item"><a class="langs__link " href="">UA</a></li>
                 <li class="langs__item"><a class="langs__link is--current" href="">RU</a></li>
                 <li class="langs__item"><a class="langs__link " href="">EN</a></li>
               </ul>
             </div>
-            <div class="header__search"><a href="#search"><i class="icon icon--search"></i></a>
-              <div class="search-modal">
-                <form class="search-modal__form">
-                  <input class="search-modal__input" type="search" value="" placeholder="Поиск" name="search">
-                  <button class="search-modal__btn" type="submit">Найти</button>
-                </form>
-              </div>
-            </div>
+            <div class="mobile-nav__header-search"><a href="#search"><i class="icon icon--search"></i></a></div>
+          </div>
+          <div class="mobile-nav__block">
+            <h4 class="mobile-nav__title">О комплексе</h4>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">О нас</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Наша команда</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Лицензии МОЗ</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Подарочные сертификаты</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Программа лояльности</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Правила комплекса</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">События</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Партнеры</a></li>
+            </ul>
+          </div>
+          <div class="mobile-nav__block">
+            <h4 class="mobile-nav__title">Лечение</h4>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Гастроэнтерология</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Лечение позвоночника и суставов</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Профилактика заболеваний органов дыхания</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Профилактика заболеваний нервной системы</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Профилактика аллергий </a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Лечение водой "Поляна квасова"</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Правила для пациентов</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Противопоказания</a></li>
+            </ul>
+            <h4 class="mobile-nav__title">Корпоративным клиентам</h4>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Конференции и семинары</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Корпоративное оздоровление</a></li>
+            </ul>
+          </div>
+          <div class="mobile-nav__block is--no-title">
+            <ul class="mobile-nav__list is--special">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Галерея</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Это интересно</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Отзывы о нас</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Он-лайн консультация врача</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакты</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="header__bottom">
-        <div class="container">
-          <div class="header__bottom-inner">
-            <div class="header__logo"><a class="logo" href="index.html"><img src="images/logo.png" alt=""></a></div>
-            <div class="header__phones">
-              <div class="phones"><a class="phones__item" href="tel:+">0 800 300 771</a><a class="phones__item" href="tel:+">(067) 353 56 94</a></div>
-            </div>
-            <div class="header__callback"><a class="btn btn--large btn--wide btn--secondary" href="" data-modal="callback">Заказать звонок</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- NAVIGATION-->
-    <nav class="nav">
-      <div class="container">
-        <div class="nav__inner">
-          <ul class="nav__list">
-            <li class="nav__item with-sub"><a class="nav__link" href="">
-                 Каталог техники<i class="icon icon--arrow-down"></i></a>
-              <div class="nav__sub">
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Бренды</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo ce</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex trucks</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">SDLG</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item with-sub"><a class="nav__link" href="">
-                 Техника по назначению<i class="icon icon--arrow-down"></i></a>
-              <div class="nav__sub">
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Строительная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы</a></li>
-                  </ul><a class="nav__sub-header" href="">Подъемные краны</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны экскаваторы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Гусеничные краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Портовые краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Электрические краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны Senhebohen</a></li>
-                  </ul>
-                </div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Дорожно-строительная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Грейдеры</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Катки </a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Дорожные фрезы Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Асфальтоукладчики Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Выглаживающие плиты</a></li>
-                  </ul><a class="nav__sub-header" href="">Сельскохозяйственная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Кормораздатчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
-                  </ul>
-                </div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Карьерная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы с жесткой рамой</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Шарнирно-сочлененные самосвалы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Бульдозеры</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Автогрейдеры</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Навесное оборудование</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex Trucks</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
-                  </ul>
-                </div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Тралы</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="">Техника с наработкой</a></li>
-            <li class="nav__item with-sub"><a class="nav__link" href="">
-                 Сервис<i class="icon icon--arrow-down"></i></a>
-              <div class="nav__sub">
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Запчасти</a></div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервис</a></div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервисные центры</a></div>
-              </div>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="">Шиномонтаж</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Operators Club</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Каталог техники</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Подъемные кран</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Краны Sennebogen</a></li>
-        </ul>
-      </div>
-      <h1 class="page__title">Краны Sennebogen</h1>
+      </nav>
     </div>
-    <div class="section section--catalogue">
-      <div class="container">
-        <div class="catalogue">
-          <aside class="catalogue__filter">
-            <div class="widget">
-              <div class="widget__header">Искать по названию</div>
-              <div class="widget__body">
-                <form class="search">
-                  <input class="search__input" type="search" value="" placeholder="Поиск" name="search">
-                  <button class="search__btn" type="submit">OK</button>
-                </form>
-              </div>
-            </div>
-            <div class="widget">
-              <div class="widget__header with--icon"><span>Вы выбрали</span>
-                <button class="widget__action" type="reset" form="checked"><i class="icon icon--reset"></i></button>
-              </div>
-              <div class="widget__body">
-                <form class="form is--filtered" id="checked">
-                  <div class="form__row">
-                    <div class="form__title">Бренд</div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="b-1" type="checkbox" name="b-1" checked>
-                      <label for="b-1">Sennebogen</label>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="widget">
-              <div class="widget__header">Фильтры</div>
-              <div class="widget__body">
-                <form class="form is--filter">
-                  <div class="form__row">
-                    <div class="form__title">Бренды</div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="brand-1" type="checkbox" name="brand-1">
-                      <label for="brand-1">Volvo ce</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="brand-2" type="checkbox" name="brand-2">
-                      <label for="brand-2">Terex trucks</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="brand-3" type="checkbox" name="brand-3">
-                      <label for="brand-3">Faresin</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="brand-4" type="checkbox" name="brand-4">
-                      <label for="brand-4">Goldhofer</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="brand-5" type="checkbox" name="brand-5">
-                      <label for="brand-5">SDLG</label>
-                    </div>
-                  </div>
-                  <div class="form__row">
-                    <div class="form__title">Грузоподъемность</div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="carrying-1" type="checkbox" name="carrying-1">
-                      <label for="carrying-1">до 10 т</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="carrying-2" type="checkbox" name="carrying-2">
-                      <label for="carrying-2">до 50 т</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="carrying-3" type="checkbox" name="carrying-3">
-                      <label for="carrying-3">до 100 т</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="carrying-4" type="checkbox" name="carrying-4">
-                      <label for="carrying-4">до 150 т</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="carrying-5" type="checkbox" name="carrying-5">
-                      <label for="carrying-5">до 200 т</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="carrying-6" type="checkbox" name="carrying-6">
-                      <label for="carrying-6">до 250 т</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="carrying-7" type="checkbox" name="carrying-7">
-                      <label for="carrying-7">до 300 т</label>
-                    </div>
-                  </div>
-                  <div class="form__row">
-                    <div class="form__title">Мах высота стрелы</div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-1" type="checkbox" name="boom-1">
-                      <label for="boom-1">до 20 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-2" type="checkbox" name="boom-2">
-                      <label for="boom-2">до 30 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-3" type="checkbox" name="boom-3">
-                      <label for="boom-3">до 40 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-4" type="checkbox" name="boom-4">
-                      <label for="boom-4">до 50 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-5" type="checkbox" name="boom-5">
-                      <label for="boom-5">до 60 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-6" type="checkbox" name="boom-6">
-                      <label for="boom-6">до 70 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-7" type="checkbox" name="boom-7">
-                      <label for="boom-7">до 80 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-8" type="checkbox" name="boom-8">
-                      <label for="boom-8">до 90 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-9" type="checkbox" name="boom-9">
-                      <label for="boom-9">до 100 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="boom-10" type="checkbox" name="boom-10">
-                      <label for="boom-10">до 114 м</label>
-                    </div>
-                  </div>
-                  <div class="form__row">
-                    <div class="form__title">Мах высота гуська</div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-1" type="checkbox" name="jib-1">
-                      <label for="jib-1">до 60 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-2" type="checkbox" name="jib-2">
-                      <label for="jib-2">до 70 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-3" type="checkbox" name="jib-3">
-                      <label for="jib-3">до 80 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-4" type="checkbox" name="jib-4">
-                      <label for="jib-4">до 90 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-5" type="checkbox" name="jib-5">
-                      <label for="jib-5">до 100 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-6" type="checkbox" name="jib-6">
-                      <label for="jib-6">до 110 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-7" type="checkbox" name="jib-7">
-                      <label for="jib-7">до 120 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-8" type="checkbox" name="jib-8">
-                      <label for="jib-8">до 130 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-9" type="checkbox" name="jib-9">
-                      <label for="jib-9">до 140 м</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="jib-10" type="checkbox" name="jib-10">
-                      <label for="jib-10">до 154 м</label>
-                    </div>
-                  </div>
-                  <div class="form__row">
-                    <div class="form__title">Мощьность двигателя</div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-1" type="checkbox" name="power-1">
-                      <label for="power-1">до 100 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-2" type="checkbox" name="power-2">
-                      <label for="power-2">100 – 150 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-3" type="checkbox" name="power-3">
-                      <label for="power-3">150 – 250 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-4" type="checkbox" name="power-4">
-                      <label for="power-4">250 – 350 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-5" type="checkbox" name="power-5">
-                      <label for="power-5">350 – 450 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-6" type="checkbox" name="power-6">
-                      <label for="power-6">450 – 550 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-7" type="checkbox" name="power-7">
-                      <label for="power-7">550 – 650 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-8" type="checkbox" name="power-8">
-                      <label for="power-8">650 – 750 кВТ</label>
-                    </div>
-                    <div class="form__field with-checkbox">
-                      <input class="form__checkbox" id="power-9" type="checkbox" name="power-9">
-                      <label for="power-9">750 – 850 кВТ</label>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </aside>
-          <main class="catalogue__body">
-            <div class="catalogue__products">
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner"><a class="product__photo" href=""><img src="images/product/p-2.jpg" alt=""></a>
-                  <div class="product__body">
-                    <h3 class="product__title">Кран-экскаватор 300 т</h3>
-                    <ul class="product__specifications">
-                      <li class="product__specifications-item"><i class="icon icon--carrying"></i><strong>45 500 - 53 300</strong> 
-                        кг
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--power"></i><strong>278</strong> 
-                        кВт
-                      </li>
-                      <li class="product__specifications-item"><i class="icon icon--capacity"></i><strong>1,55 - 3,3</strong> 
-                        м<sup>3</sup>
-                      </li>
-                    </ul>
-                    <div class="product__action"><a class="btn btn--primary" href="">Подробнее</a></div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="catalogue__action"><a class="btn btn--secondary btn--wide btn--large" href="">Загрузить еще</a></div>
-          </main>
-        </div>
-      </div>
-    </div>
-    <div class="section section--seo">
-      <div class="container">
-        <h2 class="section__title">СОЗДАНЫ VOLVO ДЛЯ МАШИН VOLVO</h2>
-        <div class="section__text">
-          <p>Volvo понимает, что новая машина - не всегда идеальное решение для бизнеса конкретного клиента. Наши услуги восстановления техники дают клиентам Volvo широкие возможности выбора решений для восстановления идеального технического состояния машин Volvo - от восстановленных на заводе комплектующих до капитального ремонта всей машины и гибких пакетных предложений. Давая технике Volvo заслуженную новую жизнь, услуги восстановления Volvo оптимизируют долгосрочную эффективность ваших инвестиций и общую стоимость владения.        p Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
-          <p>Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
-          <p>Широкий ассортимент навесного оборудования Volvo позволяет каждому клиенту выбрать наиболее подходящий вариант для эффективной работы машин. Все части машины важны; навесное оборудование Volvo, специально разработанное для техники Volvo, образует с ней единый безопасный и надежный механизм с высокой скоростью работы, высокой топливной экономичностью и низкой стоимостью владения.</p>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="container">
-          <div class="footer__top-inner">
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">Call center</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link menu__link--phone" href="">0 800 300 771</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--phone" href="">(067) 353 56 94</a></li>
-                </ul>
-              </article>
-            </div>
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">О компании ETS</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">О компании</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Новости и Акции</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вакансии</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-                </ul>
-              </article>
-            </div>
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">Каталог</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">Каталог техники</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">техника по назначению</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">техника с наработкой</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Бренды</a></li>
-                </ul>
-              </article>
-            </div>
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">Услуги</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">шиномонтаж</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Operators club</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">сервис</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">фотогалерея</a></li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <div class="footer__bottom-inner">
-            <div class="footer__copyrights">
-              <div class="copyrights">© Copyright ETS-Group.com.ua 2017</div>
-            </div>
-            <div class="footer__logo"><a class="logo logo--bottom" href=""><img src="images/logo-bottom.png" alt=""></a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div style="display: none;">
-      <div class="popup" id="callback">
-        <div class="popup__close arcticmodal-close"></div>
-        <div class="popup__inner">
-          <div class="popup__header">Заказать звонок</div>
-          <div class="popup__body">
-            <form class="form js-form-callback" action="">
-              <div class="form__row is--margin-small">
-                <div class="form__field">
-                  <label class="form__label">Имя</label>
-                  <input class="form__input" type="text" name="name">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Телефон</label>
-                  <input class="form__input" type="text" name="phone">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="popup__footer">
-            <button class="btn btn--secondary" type="submit">Отправить</button>
-          </div>
-        </div>
-      </div>
-      <div class="popup" id="order">
-        <div class="popup__close arcticmodal-close"></div>
-        <div class="popup__inner">
-          <div class="popup__header">Оставить заявку</div>
-          <div class="popup__body">
-            <form class="form js-form-order" action="">
-              <div class="form__row is--margin-small">
-                <div class="form__field form__field--select">
-                  <select name="reason">
-                    <option disabled selected>Причина обращения</option>
-                    <option value="1">Причина 1</option>
-                    <option value="2">Причина 2</option>
-                    <option value="3">Причина 3</option>
-                  </select>
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Имя</label>
-                  <input class="form__input" type="text" name="name">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Предприятие</label>
-                  <input class="form__input" type="text" name="company">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Телефон</label>
-                  <input class="form__input" type="text" name="phone">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Email</label>
-                  <input class="form__input" type="email" name="email">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="popup__footer">
-            <button class="btn btn--secondary" type="submit">Отправить</button>
-          </div>
-        </div>
-      </div>
-      <div class="popup" id="thanks">
-        <div class="popup__close arcticmodal-close"></div>
-        <div class="popup__inner">
-          <div class="popup__header">Спасибо!</div>
-          <div class="popup__body">
-            <p class="is--text-center">Текст</p>
-          </div>
-          <div class="popup__footer"><a class="btn btn--primary" href="">Кнопка</a></div>
-        </div>
-      </div>
-    </div>
-    <script src="js/vendor.js?v=1522360955213"></script>
-    <script src="js/main.js?v=1522360955213"></script>
+    <script src="js/vendor.js?v=1522418863534"></script>
+    <script src="js/main.js?v=1522418863534"></script>
   </body>
 </html>

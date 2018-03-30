@@ -68,6 +68,9 @@ $l5: $l1;
   transition-delay: 100ms;
   color: $color__gray;
   z-index: 0;
+	@include media('<900px'){
+		text-transform: none;
+	}
   &:after{
     content: '';
     position: absolute;

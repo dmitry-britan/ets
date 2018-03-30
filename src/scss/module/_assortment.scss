@@ -7,8 +7,17 @@
 }
 .assortment__item{}
 .assortment__item-inner{
-  width: 295px;
+  position: relative;
+  margin: 0 auto;
   text-align: center;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 10%; bottom: 10%;
+    right: 0;
+    width: 1px;
+    background-color: $color__third;
+  }
 }
 .assortment__photo{
   display: block;
@@ -27,14 +36,6 @@
   display: block;
   position: relative;
   text-decoration: none;
-  &:after{
-    content: '';
-    position: absolute;
-    top: 10%; bottom: 10%;
-    right: 0;
-    width: 1px;
-    background-color: $color__third;
-  }
 }
 
 .assortment__controls{

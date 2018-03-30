@@ -1,4 +1,7 @@
 .nav{
+  @include media('<970px'){
+    display: none;
+  }
 }
 .nav__inner{
   position: relative;
@@ -56,6 +59,12 @@
   text-decoration: none;
   color: $color__base;
   z-index: 0;
+  @include media('<1210px'){
+    font-size: 14px;
+  }
+  @include media('<1100px'){
+    padding: 15px 6px;
+  }
 
   &:after{
     content: '';

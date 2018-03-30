@@ -1,5 +1,6 @@
 // @include('vendor/jquery.js')
 // @include('vendor/slick.js')
 // @include('vendor/arcticModal.js')
+// @include('vendor/slideout.min.js')
 // @include('vendor/fancyBox.js')
 // @include('vendor/jqueryvalidation.js')

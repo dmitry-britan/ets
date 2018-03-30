@@ -3,6 +3,9 @@
 }
 .header__top{
   background-color: #f2f2f2;
+  @include media('<970px'){
+    display: none;
+  }
 }
 .header__top-inner{
   display: flex;
@@ -14,16 +17,35 @@
   height: 36px;
   margin: 0 auto 0 0;
 }
+.header__mobile-menu{
+  display: none;
+  @include media('<970px'){
+    display: block;
+    margin-right: 30px;
+  }
+  @include media('<900px'){
+    margin-right: 15px;
+  }
+  @include media('<600px'){
+    margin-right: 0;
+  }
+}
 .header__langs{
   margin-right: 30px;
+}
+.header__search{
+  margin-right: 10px;
 }
 .header__bottom-inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 0 20px 0;
+  padding: 19px 0 18px;
   border-bottom: 1px solid #f2f2f2;
 }
 .header__phones{
   margin: 0 24px 0 auto;
+  @include media('<800px'){
+    display: none;
+  }
 }

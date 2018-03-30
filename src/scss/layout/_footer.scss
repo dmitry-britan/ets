@@ -3,6 +3,7 @@
 }
 .footer__top-inner{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px 0 27px;
@@ -11,6 +12,11 @@
 .footer__menu{
   width: percentage(1/4);
   padding-left: 20px;
+  @include media('<800px'){
+    width: percentage(1/2);
+    padding: 0 10%;
+    margin-bottom: 20px;
+  }
 }
 .footer__bottom-inner{
   display: flex;

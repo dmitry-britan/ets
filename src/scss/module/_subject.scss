@@ -20,8 +20,12 @@
   width: 50%;
   padding-left: 20px;
   margin-bottom: 53px;
+	@include media('<700px'){
+    width: 100%;
+	}
 }
 .subject__photo{
+  flex-shrink: 0;
   width: 108px; height: 108px;
   border-radius: 50%;
   overflow: hidden;
@@ -29,6 +33,9 @@
 .subject__info{
   max-width: 357px;
   padding-left: 70px;
+	@include media('<900px'){
+    padding-left: 35px;
+	}
 }
 .subject__text{
   margin: 5px 0 18px;

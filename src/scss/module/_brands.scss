@@ -1,12 +1,20 @@
 .brands{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 18px 0 22px -20px;
+  margin: 18px 0 2px -20px;
 }
 .brands__item{
   width: percentage(1/6);
   padding-left: 20px;
+  margin-bottom: 20px;
+  @include media('<1140px'){
+    width: percentage(1/3);
+  }
+  img{
+    max-width: 100%;
+  }
 }
 .brands__item-inner{
   position: relative;

@@ -1,6 +1,5 @@
 // @include('module/functions.js')
 // @include('module/slider.js')
-// @include('module/mobile-menu.js')
 // @include('module/popup.js')
 // @include('module/form-file-upload.js')
 // @include('module/form-validation.js')

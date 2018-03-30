@@ -3,370 +3,436 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>
     </title>
-    <link rel="stylesheet" href="css/main.css?v=1522361390305">
+    <link rel="stylesheet" href="css/main.css?v=1522418884340">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-inner">
-            <div class="header__menu">
-              <div class="top-menu">
-                <ul class="top-menu__list">
-                  <li class="top-menu__item"><a class="top-menu__link" href="about.html">О компании</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="news.html">Новости и Акции</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="career.html">Вакансии</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="gallery.html">Фотогалерея</a></li>
-                  <li class="top-menu__item"><a class="top-menu__link" href="contacts.html">Контакты</a></li>
+  <body class=" site">
+    <div class="site__content">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__menu">
+                <div class="top-menu">
+                  <ul class="top-menu__list">
+                    <li class="top-menu__item"><a class="top-menu__link" href="about.html">О компании</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="news.html">Новости и Акции</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="career.html">Вакансии</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="gallery.html">Фотогалерея</a></li>
+                    <li class="top-menu__item"><a class="top-menu__link" href="contacts.html">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__langs">
+                <ul class="langs__list">
+                  <li class="langs__item"><a class="langs__link " href="">UA</a></li>
+                  <li class="langs__item"><a class="langs__link is--current" href="">RU</a></li>
+                  <li class="langs__item"><a class="langs__link " href="">EN</a></li>
                 </ul>
               </div>
+              <div class="header__search"><a href="#search"><i class="icon icon--search"></i></a></div>
             </div>
-            <div class="header__langs">
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <div class="header__mobile-menu">
+                <div class="hamburger hamburger--spin js-nav-toggle">
+                  <div class="hamburger__box">
+                    <div class="hamburger__inner"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__logo"><a class="logo" href="index.html"><img src="images/logo.png" alt=""></a></div>
+              <div class="header__phones">
+                <div class="phones"><a class="phones__item" href="tel:+">0 800 300 771</a><a class="phones__item" href="tel:+">(067) 353 56 94</a></div>
+              </div>
+              <div class="header__callback"><a class="callback btn btn--large btn--wide btn--secondary" href="" data-modal="callback"> <span>Заказать звонок</span><i class="fa fa-phone"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- SEARCH POPUP-->
+        <div class="search-modal">
+          <form class="search-modal__form">
+            <input class="search-modal__input" type="search" value="" placeholder="Поиск" name="search">
+            <button class="search-modal__btn" type="submit">Найти</button>
+          </form>
+        </div>
+      </header>
+      <!-- NAVIGATION-->
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__inner">
+            <ul class="nav__list">
+              <li class="nav__item with-sub"><a class="nav__link" href="">
+                   Каталог техники<i class="icon icon--arrow-down"></i></a>
+                <div class="nav__sub">
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Бренды</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo ce</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex trucks</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">SDLG</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item with-sub"><a class="nav__link" href="">
+                   Техника по назначению<i class="icon icon--arrow-down"></i></a>
+                <div class="nav__sub">
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Строительная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы</a></li>
+                    </ul><a class="nav__sub-header" href="">Подъемные краны</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны экскаваторы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Гусеничные краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Портовые краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Электрические краны</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны Senhebohen</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Дорожно-строительная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Грейдеры</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Катки </a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Дорожные фрезы Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Асфальтоукладчики Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Выглаживающие плиты</a></li>
+                    </ul><a class="nav__sub-header" href="">Сельскохозяйственная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Кормораздатчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Карьерная техника</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы с жесткой рамой</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Шарнирно-сочлененные самосвалы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Бульдозеры</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Автогрейдеры</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Навесное оборудование</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex Trucks</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Тралы</a>
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="">Техника с наработкой</a></li>
+              <li class="nav__item with-sub"><a class="nav__link" href="">
+                   Сервис<i class="icon icon--arrow-down"></i></a>
+                <div class="nav__sub">
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Запчасти</a></div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервис</a></div>
+                  <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервисные центры</a></div>
+                </div>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="">Шиномонтаж</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Operators Club</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Сервис</a></li>
+          </ul>
+        </div>
+        <h1 class="page__title">Сервис</h1>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="service">
+            <div class="service__text">
+              <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+            </div>
+            <div class="service__items">
+              <div class="service__item">
+                <div class="service__item-inner" style="background-image: url(images/service/s-1.png);"><a class="service__action" href="">Запчасти</a></div>
+              </div>
+              <div class="service__item">
+                <div class="service__item-inner" style="background-image: url(images/service/s-2.png);"><a class="service__action" href="">Ремонт</a></div>
+              </div>
+              <div class="service__item">
+                <div class="service__item-inner" style="background-image: url(images/service/s-3.png);"><a class="service__action" href="">Шиномонтаж</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section--special">
+        <div class="container">
+          <div class="special">
+            <div class="special__item" style="background-image: url(images/special/s-1.jpg);">
+              <article class="special__content">
+                <h4 class="special__title">Уникальное ценовое предложение</h4>
+                <p class="special__body">при покупке комплекса для дорожного строительства</p><a class="btn btn--large btn--wide btn--secondary" href="">узнать больше</a>
+                <p class="special__details">Подробности по телефону: 0 800 300 771, +38 067 353 56 94.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section--news">
+        <div class="container">
+          <h2 class="section__title">последние новости</h2>
+          <div class="news">
+            <article class="news__item"><a class="news__photo" href=""><img src="images/news/n-1.png" alt=""></a>
+              <h3 class="news__title">VOLVO SERVICES - УМНЫЕ ИНЖЕНЕРНЫЕ РЕШЕНИЯ ПЛЮС РЕШЕНИЯ ДЛЯ БИЗНЕСА</h3>
+              <date class="news__date">03/11/2017</date>
+              <p class="news__text">Volvo Construction Equipment реализует новый подход к представлению своего широкого ассортимента услуг и решений.</p>
+            </article>
+            <article class="news__item"><a class="news__photo" href=""><img src="images/news/n-2.png" alt=""></a>
+              <h3 class="news__title">В УКРАИНЕ ОТКРЫЛСЯ КЛУБ ОПЕРАТОРОВ ДОРОЖНО-СТРОИТЕЛЬНОЙ ТЕХНИКИ</h3>
+              <date class="news__date">14/06/2017</date>
+              <p class="news__text">В Украине открылся Клуб Операторов – соревнование операторов дорожно-строительной техники, которое ежегодно проводится…</p>
+            </article>
+          </div>
+          <div class="news__action"><a class="btn btn--large btn--wide-l btn--primary" href="news.html">Посмотреть все новости</a></div>
+        </div>
+      </div>
+      <div class="section section--offer">
+        <div class="container">
+          <div class="offer">
+            <div class="offer__item" style="background-image: url(images/special/s-2.png);">
+              <article class="offer__content">
+                <h2 class="offer__title">Хотите узнать больше?</h2>
+                <p class="offer__body">Мы будем рады вам помочь!</p><a class="offer__action" href="">Контакты</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section--seo">
+        <div class="container">
+          <h2 class="section__title">СОЗДАНЫ VOLVO ДЛЯ МАШИН VOLVO</h2>
+          <div class="section__text">
+            <p>Volvo понимает, что новая машина - не всегда идеальное решение для бизнеса конкретного клиента. Наши услуги восстановления техники дают клиентам Volvo широкие возможности выбора решений для восстановления идеального технического состояния машин Volvo - от восстановленных на заводе комплектующих до капитального ремонта всей машины и гибких пакетных предложений. Давая технике Volvo заслуженную новую жизнь, услуги восстановления Volvo оптимизируют долгосрочную эффективность ваших инвестиций и общую стоимость владения.        p Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
+            <p>Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
+            <p>Широкий ассортимент навесного оборудования Volvo позволяет каждому клиенту выбрать наиболее подходящий вариант для эффективной работы машин. Все части машины важны; навесное оборудование Volvo, специально разработанное для техники Volvo, образует с ней единый безопасный и надежный механизм с высокой скоростью работы, высокой топливной экономичностью и низкой стоимостью владения.</p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__top-inner">
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">Call center</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link menu__link--phone" href="">0 800 300 771</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--phone" href="">(067) 353 56 94</a></li>
+                  </ul>
+                </article>
+              </div>
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">О компании ETS</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="">О компании</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Новости и Акции</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Вакансии</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+                  </ul>
+                </article>
+              </div>
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">Каталог</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="">Каталог техники</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">техника по назначению</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">техника с наработкой</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Бренды</a></li>
+                  </ul>
+                </article>
+              </div>
+              <div class="footer__menu">
+                <!-- MENU-->
+                <article class="menu">
+                  <h3 class="menu__header">Услуги</h3>
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="">шиномонтаж</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Operators club</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">сервис</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">фотогалерея</a></li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <div class="footer__copyrights">
+                <div class="copyrights">© Copyright ETS-Group.com.ua 2017</div>
+              </div>
+              <div class="footer__logo"><a class="logo logo--bottom" href=""><img src="images/logo-bottom.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div style="display: none;">
+        <div class="popup" id="callback">
+          <div class="popup__close arcticmodal-close"></div>
+          <div class="popup__inner">
+            <div class="popup__header">Заказать звонок</div>
+            <div class="popup__body">
+              <form class="form js-form-callback" action="">
+                <div class="form__row is--margin-small">
+                  <div class="form__field">
+                    <label class="form__label">Имя</label>
+                    <input class="form__input" type="text" name="name">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Телефон</label>
+                    <input class="form__input" type="text" name="phone">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="popup__footer">
+              <button class="btn btn--secondary" type="submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="order">
+          <div class="popup__close arcticmodal-close"></div>
+          <div class="popup__inner">
+            <div class="popup__header">Оставить заявку</div>
+            <div class="popup__body">
+              <form class="form js-form-order" action="">
+                <div class="form__row is--margin-small">
+                  <div class="form__field form__field--select">
+                    <select name="reason">
+                      <option disabled selected>Причина обращения</option>
+                      <option value="1">Причина 1</option>
+                      <option value="2">Причина 2</option>
+                      <option value="3">Причина 3</option>
+                    </select>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Имя</label>
+                    <input class="form__input" type="text" name="name">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Предприятие</label>
+                    <input class="form__input" type="text" name="company">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Телефон</label>
+                    <input class="form__input" type="text" name="phone">
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label">Email</label>
+                    <input class="form__input" type="email" name="email">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="popup__footer">
+              <button class="btn btn--secondary" type="submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="thanks">
+          <div class="popup__close arcticmodal-close"></div>
+          <div class="popup__inner">
+            <div class="popup__header">Спасибо!</div>
+            <div class="popup__body">
+              <p class="is--text-center">Текст</p>
+            </div>
+            <div class="popup__footer"><a class="btn btn--primary" href="">Кнопка</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site__menu">
+      <!-- MENU-->
+      <nav class="mobile-nav">
+        <div class="mobile-nav__inner">
+          <div class="mobile-nav__header">
+            <div class="mobile-nav__header-langs">
               <ul class="langs__list">
                 <li class="langs__item"><a class="langs__link " href="">UA</a></li>
                 <li class="langs__item"><a class="langs__link is--current" href="">RU</a></li>
                 <li class="langs__item"><a class="langs__link " href="">EN</a></li>
               </ul>
             </div>
-            <div class="header__search"><a href="#search"><i class="icon icon--search"></i></a>
-              <div class="search-modal">
-                <form class="search-modal__form">
-                  <input class="search-modal__input" type="search" value="" placeholder="Поиск" name="search">
-                  <button class="search-modal__btn" type="submit">Найти</button>
-                </form>
-              </div>
-            </div>
+            <div class="mobile-nav__header-search"><a href="#search"><i class="icon icon--search"></i></a></div>
+          </div>
+          <div class="mobile-nav__block">
+            <h4 class="mobile-nav__title">О комплексе</h4>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">О нас</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Наша команда</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Лицензии МОЗ</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Подарочные сертификаты</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Программа лояльности</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Правила комплекса</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">События</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Партнеры</a></li>
+            </ul>
+          </div>
+          <div class="mobile-nav__block">
+            <h4 class="mobile-nav__title">Лечение</h4>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Гастроэнтерология</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Лечение позвоночника и суставов</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Профилактика заболеваний органов дыхания</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Профилактика заболеваний нервной системы</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Профилактика аллергий </a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Лечение водой "Поляна квасова"</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Правила для пациентов</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Противопоказания</a></li>
+            </ul>
+            <h4 class="mobile-nav__title">Корпоративным клиентам</h4>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Конференции и семинары</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Корпоративное оздоровление</a></li>
+            </ul>
+          </div>
+          <div class="mobile-nav__block is--no-title">
+            <ul class="mobile-nav__list is--special">
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Галерея</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Это интересно</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Отзывы о нас</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Он-лайн консультация врача</a></li>
+              <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакты</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="header__bottom">
-        <div class="container">
-          <div class="header__bottom-inner">
-            <div class="header__logo"><a class="logo" href="index.html"><img src="images/logo.png" alt=""></a></div>
-            <div class="header__phones">
-              <div class="phones"><a class="phones__item" href="tel:+">0 800 300 771</a><a class="phones__item" href="tel:+">(067) 353 56 94</a></div>
-            </div>
-            <div class="header__callback"><a class="btn btn--large btn--wide btn--secondary" href="" data-modal="callback">Заказать звонок</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- NAVIGATION-->
-    <nav class="nav">
-      <div class="container">
-        <div class="nav__inner">
-          <ul class="nav__list">
-            <li class="nav__item with-sub"><a class="nav__link" href="">
-                 Каталог техники<i class="icon icon--arrow-down"></i></a>
-              <div class="nav__sub">
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Бренды</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo ce</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex trucks</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">SDLG</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item with-sub"><a class="nav__link" href="">
-                 Техника по назначению<i class="icon icon--arrow-down"></i></a>
-              <div class="nav__sub">
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Строительная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы</a></li>
-                  </ul><a class="nav__sub-header" href="">Подъемные краны</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны экскаваторы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Гусеничные краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Портовые краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Электрические краны</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Краны Senhebohen</a></li>
-                  </ul>
-                </div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Дорожно-строительная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Грейдеры</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Катки </a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Дорожные фрезы Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Асфальтоукладчики Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Выглаживающие плиты</a></li>
-                  </ul><a class="nav__sub-header" href="">Сельскохозяйственная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Телескопические погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Кормораздатчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
-                  </ul>
-                </div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Карьерная техника</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Самосвалы с жесткой рамой</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Шарнирно-сочлененные самосвалы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Экскаваторы</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Бульдозеры</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Фронтальные погрузчики</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Автогрейдеры</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Навесное оборудование</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Volvo</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Terex Trucks</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Sennebogen</a></li>
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Faresin</a></li>
-                  </ul>
-                </div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Тралы</a>
-                  <ul class="nav__sub-list">
-                    <li class="nav__sub-item"><a class="nav__sub-link" href="">Goldhofer</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="">Техника с наработкой</a></li>
-            <li class="nav__item with-sub"><a class="nav__link" href="">
-                 Сервис<i class="icon icon--arrow-down"></i></a>
-              <div class="nav__sub">
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Запчасти</a></div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервис</a></div>
-                <div class="nav__sub-block"><a class="nav__sub-header" href="">Сервисные центры</a></div>
-              </div>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="">Шиномонтаж</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Operators Club</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Сервис</a></li>
-        </ul>
-      </div>
-      <h1 class="page__title">Сервис</h1>
+      </nav>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="service">
-          <div class="service__text">
-            <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
-          </div>
-          <div class="service__items">
-            <div class="service__item">
-              <div class="service__item-inner" style="background-image: url(images/service/s-1.png);"><a class="service__action" href="">Запчасти</a></div>
-            </div>
-            <div class="service__item">
-              <div class="service__item-inner" style="background-image: url(images/service/s-2.png);"><a class="service__action" href="">Ремонт</a></div>
-            </div>
-            <div class="service__item">
-              <div class="service__item-inner" style="background-image: url(images/service/s-3.png);"><a class="service__action" href="">Шиномонтаж</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section--special">
-      <div class="container">
-        <div class="special">
-          <div class="special__item" style="background-image: url(images/special/s-1.jpg);">
-            <article class="special__content">
-              <h4 class="special__title">Уникальное ценовое предложение</h4>
-              <p class="special__body">при покупке комплекса для дорожного строительства</p><a class="btn btn--large btn--wide btn--secondary" href="">узнать больше</a>
-              <p class="special__details">Подробности по телефону: 0 800 300 771, +38 067 353 56 94.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section--news">
-      <div class="container">
-        <h2 class="section__title">последние новости</h2>
-        <div class="news">
-          <article class="news__item"><a class="news__photo" href=""><img src="images/news/n-1.png" alt=""></a>
-            <h3 class="news__title">VOLVO SERVICES - УМНЫЕ ИНЖЕНЕРНЫЕ РЕШЕНИЯ ПЛЮС РЕШЕНИЯ ДЛЯ БИЗНЕСА</h3>
-            <date class="news__date">03/11/2017</date>
-            <p class="news__text">Volvo Construction Equipment реализует новый подход к представлению своего широкого ассортимента услуг и решений.</p>
-          </article>
-          <article class="news__item"><a class="news__photo" href=""><img src="images/news/n-2.png" alt=""></a>
-            <h3 class="news__title">В УКРАИНЕ ОТКРЫЛСЯ КЛУБ ОПЕРАТОРОВ ДОРОЖНО-СТРОИТЕЛЬНОЙ ТЕХНИКИ</h3>
-            <date class="news__date">14/06/2017</date>
-            <p class="news__text">В Украине открылся Клуб Операторов – соревнование операторов дорожно-строительной техники, которое ежегодно проводится…</p>
-          </article>
-        </div>
-        <div class="news__action"><a class="btn btn--large btn--wide-l btn--primary" href="news.html">Посмотреть все новости</a></div>
-      </div>
-    </div>
-    <div class="section section--offer">
-      <div class="container">
-        <div class="offer">
-          <div class="offer__item" style="background-image: url(images/special/s-2.png);">
-            <article class="offer__content">
-              <h2 class="offer__title">Хотите узнать больше?</h2>
-              <p class="offer__body">Мы будем рады вам помочь!</p><a class="offer__action" href="">Контакты</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section--seo">
-      <div class="container">
-        <h2 class="section__title">СОЗДАНЫ VOLVO ДЛЯ МАШИН VOLVO</h2>
-        <div class="section__text">
-          <p>Volvo понимает, что новая машина - не всегда идеальное решение для бизнеса конкретного клиента. Наши услуги восстановления техники дают клиентам Volvo широкие возможности выбора решений для восстановления идеального технического состояния машин Volvo - от восстановленных на заводе комплектующих до капитального ремонта всей машины и гибких пакетных предложений. Давая технике Volvo заслуженную новую жизнь, услуги восстановления Volvo оптимизируют долгосрочную эффективность ваших инвестиций и общую стоимость владения.        p Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
-          <p>Оригинальные запчасти Volvo проходят всесторонние испытания и сертификацию, чтобы гарантировать высокую производительность и эксплуатационную готовность машин. Большой выбор имеющихся в наличии запчастей, обеспеченных гарантией Volvo, помогает клиентам защитить свои инвестиции в технику, продлить срок службы машин и гарантировать длительное сохранение высокой производительности.</p>
-          <p>Широкий ассортимент навесного оборудования Volvo позволяет каждому клиенту выбрать наиболее подходящий вариант для эффективной работы машин. Все части машины важны; навесное оборудование Volvo, специально разработанное для техники Volvo, образует с ней единый безопасный и надежный механизм с высокой скоростью работы, высокой топливной экономичностью и низкой стоимостью владения.</p>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="container">
-          <div class="footer__top-inner">
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">Call center</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link menu__link--phone" href="">0 800 300 771</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--phone" href="">(067) 353 56 94</a></li>
-                </ul>
-              </article>
-            </div>
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">О компании ETS</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">О компании</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Новости и Акции</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вакансии</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-                </ul>
-              </article>
-            </div>
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">Каталог</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">Каталог техники</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">техника по назначению</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">техника с наработкой</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Бренды</a></li>
-                </ul>
-              </article>
-            </div>
-            <div class="footer__menu">
-              <!-- MENU-->
-              <article class="menu">
-                <h3 class="menu__header">Услуги</h3>
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">шиномонтаж</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Operators club</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">сервис</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">фотогалерея</a></li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <div class="footer__bottom-inner">
-            <div class="footer__copyrights">
-              <div class="copyrights">© Copyright ETS-Group.com.ua 2017</div>
-            </div>
-            <div class="footer__logo"><a class="logo logo--bottom" href=""><img src="images/logo-bottom.png" alt=""></a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div style="display: none;">
-      <div class="popup" id="callback">
-        <div class="popup__close arcticmodal-close"></div>
-        <div class="popup__inner">
-          <div class="popup__header">Заказать звонок</div>
-          <div class="popup__body">
-            <form class="form js-form-callback" action="">
-              <div class="form__row is--margin-small">
-                <div class="form__field">
-                  <label class="form__label">Имя</label>
-                  <input class="form__input" type="text" name="name">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Телефон</label>
-                  <input class="form__input" type="text" name="phone">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="popup__footer">
-            <button class="btn btn--secondary" type="submit">Отправить</button>
-          </div>
-        </div>
-      </div>
-      <div class="popup" id="order">
-        <div class="popup__close arcticmodal-close"></div>
-        <div class="popup__inner">
-          <div class="popup__header">Оставить заявку</div>
-          <div class="popup__body">
-            <form class="form js-form-order" action="">
-              <div class="form__row is--margin-small">
-                <div class="form__field form__field--select">
-                  <select name="reason">
-                    <option disabled selected>Причина обращения</option>
-                    <option value="1">Причина 1</option>
-                    <option value="2">Причина 2</option>
-                    <option value="3">Причина 3</option>
-                  </select>
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Имя</label>
-                  <input class="form__input" type="text" name="name">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Предприятие</label>
-                  <input class="form__input" type="text" name="company">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Телефон</label>
-                  <input class="form__input" type="text" name="phone">
-                </div>
-                <div class="form__field">
-                  <label class="form__label">Email</label>
-                  <input class="form__input" type="email" name="email">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="popup__footer">
-            <button class="btn btn--secondary" type="submit">Отправить</button>
-          </div>
-        </div>
-      </div>
-      <div class="popup" id="thanks">
-        <div class="popup__close arcticmodal-close"></div>
-        <div class="popup__inner">
-          <div class="popup__header">Спасибо!</div>
-          <div class="popup__body">
-            <p class="is--text-center">Текст</p>
-          </div>
-          <div class="popup__footer"><a class="btn btn--primary" href="">Кнопка</a></div>
-        </div>
-      </div>
-    </div>
-    <script src="js/vendor.js?v=1522361390307"></script>
-    <script src="js/main.js?v=1522361390307"></script>
+    <script src="js/vendor.js?v=1522418884345"></script>
+    <script src="js/main.js?v=1522418884345"></script>
   </body>
 </html>

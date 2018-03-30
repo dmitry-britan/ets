@@ -2,6 +2,9 @@
 	$('a[href="#search"]').on('click', (event) => {
 		event.preventDefault();
 
+		// Закрываем боковое меню (в случае открытия поиска из него)
+		slideout.close();
+
 		$('.search-modal').addClass('open');
 		$('.search-modal > form > input[type="search"]').focus();
 	});

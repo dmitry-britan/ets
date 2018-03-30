@@ -61,6 +61,9 @@
 }
 .btn--wide-l{
 	min-width: 380px;
+	@include media('<600px'){
+		min-width: 280px;
+	}
 }
 .btn--large{
 	padding: 15px 30px;
