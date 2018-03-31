@@ -10,6 +10,9 @@ html {
 body{
   font-family: Roboto, sans-serif;
 }
+body.is--filter-active{
+  overflow: hidden;
+}
 .container{
   min-width: 320px;
   max-width: 1210px;

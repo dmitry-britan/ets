@@ -69,6 +69,18 @@ if ($productSinglePhoto.length) {
 })();
 
 (function() {
+	if (!$('.js-toggle-filter').length) {
+		return false;
+	}
+
+	$('.js-toggle-filter').on('click', function(event) {
+		event.preventDefault();
+		$('body').toggleClass('is--filter-active');
+		$('.js-filter').toggleClass('is--active');
+	});
+})();
+
+(function() {
 	$('a[href="#search"]').on('click', function(event) {
 		event.preventDefault();
 
@@ -273,7 +285,24 @@ if ($('.js-slider-product-single').length) {
 		centerMode: false,
 		focusOnSelect: true,
 		nextArrow: $('.js-product-single-slider-next'),
-		prevArrow: $('.js-product-single-slider-prev')
+		prevArrow: $('.js-product-single-slider-prev'),
+		responsive: [{
+			breakpoint: 1000,
+			settings: {
+				slidesToShow: 4
+			}
+		}, {
+			breakpoint: 800,
+			settings: {
+				slidesToShow: 3
+			}
+		}, {
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+				dots: true
+			}
+		}]
 	});
 }
 

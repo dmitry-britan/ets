@@ -3,58 +3,105 @@
   max-width: 1180px;
   margin: 0 auto;
 }
-.slider__item{
+.slider__item-inner{
   position: relative;
-  height: 504px!important;
+  height: 504px;
   background-position: 0 0;
   background-repeat: no-repeat;
+  @include media('<900px'){
+    height: 0;
+    padding-top:percentage(504/1180);
+    background-size: cover;
+  }
+  @include media('<600px'){
+    height: 320px;
+    padding: 0;
+  }
 }
 .slider__content{
   position: absolute;
   top: 40px; left: 50px;
   max-width: 520px;
+  max-height: 504px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: left;
+  @include media('<800px'){
+    max-width: 60%;
+    bottom: 40px;
+  }
+  @include media('<600px'){
+    top: 30px; left: 30px; bottom: 30px;
+    max-width: 80%;
+  }
 }
 .slider__title{
-  margin: 0;
+  overflow: hidden;
+  max-height: 144px;
+  margin: 0 0 20px;
   font-size: 60px;
   font-weight: 400;
   line-height: 72px;
   text-transform: uppercase;
   color: #fefefe;
   @include VolvoBroadPro();
-
+  @include media('<900px'){
+    max-height: 96px;
+    font-size: 42px;
+    line-height: 48px;
+  }
+  @include media('<800px'){
+    max-height: 84px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  @include media('<600px'){
+    max-height: 126px;
+  }
 }
 .slider__body{}
 .slider__body-title{
+  margin: 0 0 16px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
   text-transform: uppercase;
   color: #fff;
+  @include media('<900px'){
+    overflow: hidden;
+    margin: 0 0 10px;
+    max-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include media('<800px'){
+    display: none;
+  }
 }
 .slider__body-text{
+  overflow: hidden;
+  max-height: 96px;
+  max-width: percentage(445/520);
   margin: 0 0 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   color: #ffffff;
+  @include media('<900px'){
+    margin: 0 0 10px;
+    max-height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include media('<800px'){
+    display: none;
+  }
 }
 .slider__action{
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  border: 2px solid #fff;
-  padding: 16px 66px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-  transition: all 300ms linear;
-
-  &:hover{
-    border: 2px solid $color__secondary;
-    background-color: $color__secondary;
+  @include media('<900px'){
+    min-width: 180px;
+    padding: 8px 24px;
   }
 }
 .slider__controls{

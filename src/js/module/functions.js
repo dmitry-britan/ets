@@ -1,6 +1,7 @@
 // @include('function/change-qty.js')
 // @include('function/fancybox-elements.js')
 // @include('function/form-label.js')
+// @include('function/filter-toggle.js')
 // @include('function/search-modal.js')
 // @include('function/slideout-menu.js')
 // @include('function/showOnHover.js')

@@ -1,19 +1,27 @@
 .static-informer{
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .static-informer__inner{
 	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
 	margin-left: -20px;
+	margin-bottom: 20px;
 }
 .static-informer__item{
 	padding-left: 20px;
 	margin-bottom: 20px;
+	width: 50%;
+	@include media('<700px'){
+		width: 100%;
+	}
 }
 .static-informer__content{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	width: 580px;
-	height: 162px;
+	height: 100%;
+	padding: 21px;
 	border: 1px solid #e1e1e1;
 	background-color: $color__third;
 	text-decoration: none;
@@ -25,10 +33,24 @@
 .static-informer__photo{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 50%;
+	@include media('<1000px'){
+		width: 40%;
+	}
+	@include media('<900px'){
+		width: 100%;
+		margin-bottom: 16px;
+	}
+	img{
+		max-width: 100%;
+	}
 }
 .static-informer__body{
 	flex-grow: 1;
+	@include media('<900px'){
+		text-align: center;
+	}
 }
 .static-informer__title{
 	margin: 0 0 16px;

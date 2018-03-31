@@ -14,8 +14,16 @@ block content
   .section.section--catalogue
     .container
       .catalogue
-        aside.catalogue__filter
+        .catalogue__toggle-filter.js-toggle-filter
+          a(href="").btn.btn--large.btn--wide.btn--secondary Фильтр
+        aside.catalogue__filter.js-filter
+          .catalogue__toggle-filter.js-toggle-filter
+            a(href="").btn.btn--large.btn--wide.btn--secondary Закрыть
+            
           include pug/parts/catalogue-filter
+
+          .catalogue__toggle-filter.js-toggle-filter
+            a(href="").btn.btn--large.btn--wide.btn--secondary Закрыть
         main.catalogue__body
           .catalogue__products
             include pug/info/product-info

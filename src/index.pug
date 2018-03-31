@@ -12,13 +12,14 @@ block content
         i.icon.icon--slider-next
     .slider__inner.js-slider
       each i in [1,2,3]
-        .slider__item(style="background-image: url(images/slider/s-1.jpg);")
-          article.slider__content
-            h4.slider__title ОФИЦИАЛЬНЫЙ ДИЛЕР VOLVO НА ТЕРРИТОРИИ УКРАИНЫ
-            .slider__body
-              h5.slider__body-title Сочлененные самосвалы 
-              p.slider__body-text При выполнении карьерных, добывающих, земляных работ, при прокладке туннелей и переработке материалов и мусора, шарнирно сочлененный самосвал Volvo ежедневно сможет выполнить ваши транспортные задачи.
-            a(href="").btn.btn--large.btn--wide.btn--white Узнать больше
+        .slider__item
+          .slider__item-inner(style="background-image: url(images/slider/s-1.jpg);")
+            article.slider__content
+              h4.slider__title ОФИЦИАЛЬНЫЙ ДИЛЕР VOLVO НА ТЕРРИТОРИИ УКРАИНЫ
+              .slider__body
+                h5.slider__body-title Сочлененные самосвалы 
+                p.slider__body-text При выполнении карьерных, добывающих, земляных работ, при прокладке туннелей и переработке материалов и мусора, шарнирно сочлененный самосвал Volvo ежедневно сможет выполнить ваши транспортные задачи.
+              a(href="").slider__action.btn.btn--large.btn--wide.btn--white Узнать больше
 
   .section
     .container

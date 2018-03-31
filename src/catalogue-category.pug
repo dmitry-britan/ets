@@ -13,8 +13,16 @@ block content
   .section.section--catalogue
     .container
       .catalogue
-        aside.catalogue__filter
+        .catalogue__toggle-filter.js-toggle-filter
+          a(href="").btn.btn--large.btn--wide.btn--secondary Фильтр
+        aside.catalogue__filter.js-filter
+          .catalogue__toggle-filter.js-toggle-filter
+            a(href="").btn.btn--large.btn--wide.btn--secondary Закрыть
+            
           include pug/parts/catalogue-filter
+
+          .catalogue__toggle-filter.js-toggle-filter
+            a(href="").btn.btn--large.btn--wide.btn--secondary Закрыть
         main.catalogue__body
           .catalogue__products
             each i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
