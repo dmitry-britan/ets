@@ -1,4 +1,7 @@
 .search-modal
-  form.search-modal__form
-    input(type="search", value="", placeholder="Поиск", name="search").search-modal__input
-    button(type="submit").search-modal__btn Найти
+  .search-modal__inner
+    .search-modal__close
+      i.icon.icon--search-close.js-close
+    form.search-modal__form
+      input(type="search", value="", placeholder="Поиск", name="search").search-modal__input
+      button(type="submit").search-modal__btn Найти

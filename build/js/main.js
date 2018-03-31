@@ -92,7 +92,8 @@ if ($productSinglePhoto.length) {
 	});
 
 	$('.search-modal').on('click keyup', function(event) {
-		if (event.target === event.currentTarget || event.target.className === 'close' || event.keyCode === 27) {
+		console.log(event.target.className);
+		if (event.target === event.currentTarget || event.target.className.includes('js-close') || event.keyCode === 27) {
 			$(event.currentTarget).removeClass('open');
 		}
 	});

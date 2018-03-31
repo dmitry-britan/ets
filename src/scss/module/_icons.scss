@@ -38,3 +38,6 @@
 .icon--reset{
   @include sprite('reset');
 }
+.icon--search-close{
+  @include sprite('search-close');
+}
