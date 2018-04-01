@@ -1,13 +1,17 @@
 //
 // Валидация формы "Заказать обратный звонок"
 // =================================================================
-let validateFormCallback = {
+let validateFormOrder = {
 	rules: {
 		name: {
 			required: true,
 		},
 		phone: {
 			required: true,
+		},
+		email: {
+			required: true,
+			type: 'email',
 		},
 	},
 	messages: {
@@ -17,10 +21,17 @@ let validateFormCallback = {
 		phone: {
 			required: 'Введите номер телефона',
 		},
+		phone: {
+			required: 'Введите номер телефона',
+		},
+		email: {
+			required: 'Введите Ваш e-mail',
+			type: 'Введите корректный адрес',
+		},
 	},
 	focusCleanup: true,
 	focusInvalid: false,
 };
 
-// CALLBACK FORM
-$('.js-form-callback').validate(validateFormCallback);
+// ORDER FORM
+$('.js-form-order').validate(validateFormOrder);

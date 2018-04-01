@@ -1,5 +1,21 @@
 'use strict';
 
+var _messages;
+
+function _defineProperty(obj, key, value) {
+	if (key in obj) {
+		Object.defineProperty(obj, key, {
+			value: value,
+			enumerable: true,
+			configurable: true,
+			writable: true
+		});
+	} else {
+		obj[key] = value;
+	}
+	return obj;
+}
+
 function checkQtyStatus($el, minValue) {
 	if (parseInt($el.val(), 10) > minValue) {
 		$el.parent().addClass('is--active');
@@ -92,7 +108,6 @@ if ($productSinglePhoto.length) {
 	});
 
 	$('.search-modal').on('click keyup', function(event) {
-		console.log(event.target.className);
 		if (event.target === event.currentTarget || event.target.className.includes('js-close') || event.keyCode === 27) {
 			$(event.currentTarget).removeClass('open');
 		}
@@ -395,116 +410,40 @@ $('[data-modal]').on('click', function(e) {
 })();
 
 //
-// Валидация формы "Задать вопрос"
+// Валидация формы "Заказать обратный звонок"
 // =================================================================
-var validateFormLogin = {
-	rules: {
-		email: {
-			required: true,
-			email: true
-		},
-		password: {
-			required: true
-		}
-	},
-	messages: {
-		email: {
-			email: 'Введите корректный e-mail адрес',
-			required: 'Введите Ваш e-mail'
-		},
-		password: {
-			required: 'Введите Ваш пароль'
-		}
-	},
-	focusCleanup: true,
-	focusInvalid: false
-};
-
-// Login Form
-$('.js-form-login').validate(validateFormLogin);
-
-//
-// Валидация формы "Задать вопрос"
-// =================================================================
-var validateFormAsk = {
+var validateFormOrder = {
 	rules: {
 		name: {
+			required: true
+		},
+		phone: {
 			required: true
 		},
 		email: {
 			required: true,
-			email: true
-		},
-		comment: {
-			required: true
+			type: 'email'
 		}
 	},
-	messages: {
+	messages: (_messages = {
 		name: {
 			required: 'Введите Ваше имя'
 		},
-		email: {
-			email: 'Введите корректный e-mail адрес',
-			required: 'Введите Ваш e-mail'
-		},
-		comment: {
-			required: 'Введите Ваше сообщение'
+		phone: {
+			required: 'Введите номер телефона'
 		}
-	},
+	}, _defineProperty(_messages, 'phone', {
+		required: 'Введите номер телефона'
+	}), _defineProperty(_messages, 'email', {
+		required: 'Введите Ваш e-mail',
+		type: 'Введите корректный адрес'
+	}), _messages),
 	focusCleanup: true,
 	focusInvalid: false
 };
 
-// ASK FORM
-$('.js-form-ask').validate(validateFormAsk);
-
-//
-// Валидация формы "Задать вопрос"
-// =================================================================
-var validateFormQuestion = {
-	rules: {
-		name: {
-			required: true
-		},
-		question: {
-			required: true
-		}
-	},
-	messages: {
-		name: {
-			required: 'Введите Ваше имя'
-		},
-		question: {
-			required: 'Введите Ваш вопрос'
-		}
-	},
-	focusCleanup: true,
-	focusInvalid: false
-};
-
-// QUESTION FORM
-$('.js-form-question').validate(validateFormQuestion);
-
-//
-// Валидация формы "Ответить на сообщение"
-// =================================================================
-var validateFormAnswer = {
-	rules: {
-		answer: {
-			required: true
-		}
-	},
-	messages: {
-		answer: {
-			required: 'Введите Ваше сообщение'
-		}
-	},
-	focusCleanup: true,
-	focusInvalid: false
-};
-
-// ANSWER FORM
-$('.js-form-answer').validate(validateFormAnswer);
+// ORDER FORM
+$('.js-form-order').validate(validateFormOrder);
 
 //
 // Валидация формы "Заказать обратный звонок"
@@ -513,11 +452,17 @@ var validateFormCallback = {
 	rules: {
 		name: {
 			required: true
+		},
+		phone: {
+			required: true
 		}
 	},
 	messages: {
 		name: {
 			required: 'Введите Ваше имя'
+		},
+		phone: {
+			required: 'Введите номер телефона'
 		}
 	},
 	focusCleanup: true,
@@ -526,85 +471,6 @@ var validateFormCallback = {
 
 // CALLBACK FORM
 $('.js-form-callback').validate(validateFormCallback);
-
-// 
-// Валидация формы "Быстрая Регистрация"
-// =================================================================
-var validateFormRegistration = {
-	rules: {
-		name: {
-			required: true
-		},
-		email: {
-			required: true,
-			email: true
-		}
-	},
-	messages: {
-		name: {
-			required: 'Введите Ваше имя'
-		},
-		email: {
-			email: 'Введите корректный e-mail адрес',
-			required: 'Введите Ваш e-mail'
-		}
-	},
-	submitHandler: function submitHandler(form) {
-		// ////////////////////
-		//  AJAX CODE GOES HERE
-		// ////////////////////
-		form.reset();
-	},
-	focusCleanup: true,
-	focusInvalid: false
-};
-
-// REGISTRATION FORM
-$('.js-form-registration').validate(validateFormRegistration);
-
-//
-// Валидация формы "Задать вопрос"
-// =================================================================
-var validateFormProfileData = {
-	rules: {
-		email: {
-			required: true,
-			email: true
-		},
-		name: {
-			required: true
-		},
-		city: {
-			required: true
-		},
-		country: {
-			required: true
-		},
-		account: {
-			required: true
-		}
-	},
-	messages: {
-		email: {
-			email: 'Введите корректный e-mail адрес',
-			required: 'Введите Ваш e-mail'
-		},
-		name: {
-			required: 'Введите Ваше имя'
-		},
-		city: {
-			required: 'Введите Ваш город'
-		},
-		country: {
-			required: 'Введите Вашу страну'
-		}
-	},
-	focusCleanup: true,
-	focusInvalid: false
-};
-
-// ProfileData Form
-$('.js-form-profile-data').validate(validateFormProfileData);
 
 //
 // Подключаем fancybox для фото товара

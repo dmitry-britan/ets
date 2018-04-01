@@ -10,7 +10,6 @@
 	});
 
 	$('.search-modal').on('click keyup', (event) => {
-		console.log(event.target.className);
 		if (
 			event.target === event.currentTarget ||
 			event.target.className.includes('js-close') ||

@@ -10,11 +10,13 @@ div(style='display: none;')
 						.form__field
 							label.form__label Имя
 							input(type="text", name="name").form__input
+					.form__row
 						.form__field
 							label.form__label Телефон
 							input(type="text", name="phone").form__input
-			.popup__footer
-				button(type="submit").btn.btn--secondary Отправить
+					.form__row.is--margin-none
+						.form__field.is--centered
+							button(type="submit").btn.btn--secondary Отправить
 
 	//- Leave an order
 	#order.popup
@@ -39,11 +41,13 @@ div(style='display: none;')
 						.form__field
 							label.form__label Телефон
 							input(type="text", name="phone").form__input
+					.form__row
 						.form__field
 							label.form__label Email
 							input(type="email", name="email").form__input
-			.popup__footer
-				button(type="submit").btn.btn--secondary Отправить
+					.form__row.is--margin-none
+						.form__field.is--centered
+							button(type="submit").btn.btn--secondary Отправить
 
 	//- Thank You!
 	#thanks.popup

@@ -5,7 +5,7 @@
 }
 .nav__inner{
   position: relative;
-  z-index: 100;
+  z-index: 300;
 }
 .nav__list{
   display: flex;
@@ -113,6 +113,15 @@
   margin: 0 0 30px;
   padding: 0;
   list-style: none;
+  &.two-columns{
+    columns: 2;
+  }
+  &.three-columns{
+    columns: 3;
+  }
+  &.four-columns{
+    columns: 4;
+  }
 }
 .nav__sub-item{
   padding: 6px 0;

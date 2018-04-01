@@ -124,6 +124,12 @@ textarea {
   &.with--file{
     margin-bottom: 20px;
   }
+  .is--margin-none &{
+    margin: 0;
+  }
+  &.is--centered{
+    text-align: center;
+  }
   &.is--required {
     &:after {
       content: '';
