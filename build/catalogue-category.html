@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>
     </title>
-    <link rel="stylesheet" href="css/main.css?v=1522558687804">
+    <link rel="stylesheet" href="css/main.css?v=1525084991139">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body class=" site">
@@ -70,6 +70,7 @@
       <nav class="nav">
         <div class="container">
           <div class="nav__inner">
+            <div class="is--effect-block"></div>
             <ul class="nav__list">
               <li class="nav__item with-sub"><a class="nav__link" href="">
                    Каталог техники<i class="icon icon--arrow-down"></i></a>
@@ -188,201 +189,75 @@
                   <button class="widget__action" type="reset" form="checked"><i class="icon icon--reset"></i></button>
                 </div>
                 <div class="widget__body">
-                  <form class="form is--filtered" id="checked">
+                  <div class="form is--filtered" id="checked">
                     <div class="form__row">
                       <div class="form__title">Бренд</div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="b-1" type="checkbox" name="b-1" checked>
-                        <label for="b-1">Sennebogen</label>
-                      </div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link is--active" href="#link1">Sennebogen</a></div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
               <div class="widget">
                 <div class="widget__header">Фильтры</div>
                 <div class="widget__body">
-                  <form class="form is--filter">
+                  <div class="form is--filter">
                     <div class="form__row">
                       <div class="form__title">Бренды</div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="brand-1" type="checkbox" name="brand-1">
-                        <label for="brand-1">Volvo ce</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="brand-2" type="checkbox" name="brand-2">
-                        <label for="brand-2">Terex trucks</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="brand-3" type="checkbox" name="brand-3">
-                        <label for="brand-3">Faresin</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="brand-4" type="checkbox" name="brand-4">
-                        <label for="brand-4">Goldhofer</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="brand-5" type="checkbox" name="brand-5">
-                        <label for="brand-5">SDLG</label>
-                      </div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link1">Volvo ce</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link2">Terex trucks</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link3">Faresin</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link4">Goldhofer</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link5">SDLG</a></div>
                     </div>
                     <div class="form__row">
                       <div class="form__title">Грузоподъемность</div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="carrying-1" type="checkbox" name="carrying-1">
-                        <label for="carrying-1">до 10 т</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="carrying-2" type="checkbox" name="carrying-2">
-                        <label for="carrying-2">до 50 т</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="carrying-3" type="checkbox" name="carrying-3">
-                        <label for="carrying-3">до 100 т</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="carrying-4" type="checkbox" name="carrying-4">
-                        <label for="carrying-4">до 150 т</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="carrying-5" type="checkbox" name="carrying-5">
-                        <label for="carrying-5">до 200 т</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="carrying-6" type="checkbox" name="carrying-6">
-                        <label for="carrying-6">до 250 т</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="carrying-7" type="checkbox" name="carrying-7">
-                        <label for="carrying-7">до 300 т</label>
-                      </div>
+                      <div class="form__field with-checkbox"></div><a class="form__checkbox-link" href="#link1">до 10 т</a>
+                      <div class="form__field with-checkbox"></div><a class="form__checkbox-link" href="#link2">до 50 т</a>
+                      <div class="form__field with-checkbox"></div><a class="form__checkbox-link is--active" href="#link3">до 100 т</a>
+                      <div class="form__field with-checkbox"></div><a class="form__checkbox-link" href="#link4">до 150 т</a>
+                      <div class="form__field with-checkbox"></div><a class="form__checkbox-link" href="#link5">до 200 т</a>
+                      <div class="form__field with-checkbox"></div><a class="form__checkbox-link" href="#link6">до 250 т</a>
+                      <div class="form__field with-checkbox"></div><a class="form__checkbox-link" href="#link7">до 300 т</a>
                     </div>
                     <div class="form__row">
                       <div class="form__title">Мах высота стрелы</div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-1" type="checkbox" name="boom-1">
-                        <label for="boom-1">до 20 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-2" type="checkbox" name="boom-2">
-                        <label for="boom-2">до 30 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-3" type="checkbox" name="boom-3">
-                        <label for="boom-3">до 40 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-4" type="checkbox" name="boom-4">
-                        <label for="boom-4">до 50 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-5" type="checkbox" name="boom-5">
-                        <label for="boom-5">до 60 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-6" type="checkbox" name="boom-6">
-                        <label for="boom-6">до 70 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-7" type="checkbox" name="boom-7">
-                        <label for="boom-7">до 80 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-8" type="checkbox" name="boom-8">
-                        <label for="boom-8">до 90 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-9" type="checkbox" name="boom-9">
-                        <label for="boom-9">до 100 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="boom-10" type="checkbox" name="boom-10">
-                        <label for="boom-10">до 114 м</label>
-                      </div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link1">до 20 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link2">до 30 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link3">до 40 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link4">до 50 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link5">до 60 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link6">до 70 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link7">до 80 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link8">до 90 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link9">до 100 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link10">до 114 м</a></div>
                     </div>
                     <div class="form__row">
                       <div class="form__title">Мах высота гуська</div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-1" type="checkbox" name="jib-1">
-                        <label for="jib-1">до 60 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-2" type="checkbox" name="jib-2">
-                        <label for="jib-2">до 70 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-3" type="checkbox" name="jib-3">
-                        <label for="jib-3">до 80 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-4" type="checkbox" name="jib-4">
-                        <label for="jib-4">до 90 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-5" type="checkbox" name="jib-5">
-                        <label for="jib-5">до 100 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-6" type="checkbox" name="jib-6">
-                        <label for="jib-6">до 110 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-7" type="checkbox" name="jib-7">
-                        <label for="jib-7">до 120 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-8" type="checkbox" name="jib-8">
-                        <label for="jib-8">до 130 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-9" type="checkbox" name="jib-9">
-                        <label for="jib-9">до 140 м</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="jib-10" type="checkbox" name="jib-10">
-                        <label for="jib-10">до 154 м</label>
-                      </div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link1">до 60 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link2">до 70 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link3">до 80 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link4">до 90 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link5">до 100 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link6">до 110 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link7">до 120 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link8">до 130 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link9">до 140 м</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link10">до 154 м</a></div>
                     </div>
                     <div class="form__row">
                       <div class="form__title">Мощьность двигателя</div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-1" type="checkbox" name="power-1">
-                        <label for="power-1">до 100 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-2" type="checkbox" name="power-2">
-                        <label for="power-2">100 – 150 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-3" type="checkbox" name="power-3">
-                        <label for="power-3">150 – 250 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-4" type="checkbox" name="power-4">
-                        <label for="power-4">250 – 350 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-5" type="checkbox" name="power-5">
-                        <label for="power-5">350 – 450 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-6" type="checkbox" name="power-6">
-                        <label for="power-6">450 – 550 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-7" type="checkbox" name="power-7">
-                        <label for="power-7">550 – 650 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-8" type="checkbox" name="power-8">
-                        <label for="power-8">650 – 750 кВТ</label>
-                      </div>
-                      <div class="form__field with-checkbox">
-                        <input class="form__checkbox" id="power-9" type="checkbox" name="power-9">
-                        <label for="power-9">750 – 850 кВТ</label>
-                      </div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link1">до 100 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link2">100 – 150 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link3">150 – 250 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link4">250 – 350 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link5">350 – 450 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link6">450 – 550 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link7">550 – 650 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link8">650 – 750 кВТ</a></div>
+                      <div class="form__field with-checkbox"><a class="form__checkbox-link" href="#link9">750 – 850 кВТ</a></div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
               <div class="catalogue__toggle-filter js-toggle-filter"><a class="btn btn--large btn--wide btn--secondary" href="">Закрыть</a></div>
@@ -951,7 +826,7 @@
         </div>
       </nav>
     </div>
-    <script src="js/vendor.js?v=1522558687809"></script>
-    <script src="js/main.js?v=1522558687809"></script>
+    <script src="js/vendor.js?v=1525084991140"></script>
+    <script src="js/main.js?v=1525084991140"></script>
   </body>
 </html>

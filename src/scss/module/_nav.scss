@@ -6,6 +6,15 @@
 .nav__inner{
   position: relative;
   z-index: 300;
+  .is--effect-block{
+    position: absolute;
+    top: 0; left: 0;
+    width: 0; height: 100%;
+    background: $color__secondary;
+    transition: all 500ms linear,
+                opacity 250ms linear;
+    z-index: -1;
+  }
 }
 .nav__list{
   display: flex;
@@ -24,21 +33,24 @@
   }
   &:hover{
     .nav__sub{
-      @include dropdownHover;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+      transition: 500ms all 200ms linear, 
+                  300ms opacity 100ms ease-in;
+      padding: 40px 30px;
+    }
+    .nav__sub-header,
+      .nav__sub-item{
+      max-height: 150px;
+      opacity: 1;
+      transition: 700ms max-height 200ms cubic-bezier(.09,.48,.06,.24), 
+                  300ms opacity 100ms ease-in;
     }
     .nav__link{
       &, &.is--current{
         color: #fff;
-
-        &:after{
-          top: 0; left: 0;
-          width: 100%;
-          height: 100%;
-          transform: translate(0,0);
-          background-color: $color__secondary;
-        }
-
-        transition: all 300ms ease-in-out;
+        transition: all 700ms ease-in-out;
       }
       .icon{
         top:19px;
@@ -55,7 +67,7 @@
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
-  transition-delay: 150ms;
+  transition-delay: 250ms;
   text-decoration: none;
   color: $color__base;
   z-index: 0;
@@ -64,17 +76,6 @@
   }
   @include media('<1100px'){
     padding: 15px 6px;
-  }
-
-  &:after{
-    content: '';
-    position: absolute;
-    top: 50%; left: 50%;
-    width: 0; height: 0;
-    background: $color__secondary;
-    transform: translate(-25%, -25%);
-    transition: all 300ms ease-in-out;
-    z-index: -1;
   }
 
   .icon{
@@ -89,10 +90,10 @@
   justify-content: space-between;
   position: absolute;
   left: 0; right: 0;
-  padding: 40px 30px;
+  padding: 0 30px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   background-color: #fbfbfb;
-  @include dropdown;
+  @include dropdown(0, 50ms);
 }
 .nav__sub-block{
   display: flex;
@@ -101,6 +102,9 @@
   flex-basis: 370px;
 }
 .nav__sub-header{
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
   margin: 0 0 20px;
   font-size: 16px;
   font-weight: 500;
@@ -108,6 +112,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color__base;
+  transition: all 200ms linear;
 }
 .nav__sub-list{
   margin: 0 0 30px;
@@ -124,7 +129,11 @@
   }
 }
 .nav__sub-item{
+  overflow: hidden;
+  max-height: 0;
   padding: 6px 0;
+  opacity: 0;
+  transition: all 500ms linear;
 }
 .nav__sub-link{
   display: block;

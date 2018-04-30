@@ -17,13 +17,13 @@
 }
 .categories__item-inner{
 	min-height: 270px;
-	border: 1px solid $color__third;
+	border: 2px solid $color__third;
 	background-color: #ffffff;
 	text-align: center;
 	transition: border 300ms linear;
 
 	&:hover{
-		border: 1px solid darken($color__third, 7%);
+		border: 2px solid $color__primary;
 	}
 }
 .categories__item-header{

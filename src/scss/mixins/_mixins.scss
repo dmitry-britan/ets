@@ -31,19 +31,19 @@
 @mixin VolvoBroadPro {
   font-family: "Volvo Broad Pro", Roboto, Arial, Helvetica, sans-serif;
 }
-@mixin dropdown($translateY: 10px) {
+@mixin dropdown($translateY: 10px, $time: 300ms) {
   visibility: hidden;
   opacity: 0;
 	background-color: #ffffff;
   transform: translateY($translateY);
-  transition: 0.3s all ease-in-out 0s, 0s visibility linear 0.3s;
+  transition: $time all ease-in-out 0s, 0s visibility linear $time;
 	z-index: -1;
 }
 
-@mixin dropdownHover($translateY: 0px) {
+@mixin dropdownHover($translateY: 0px, $time: 300ms) {
   visibility: visible;
   opacity: 1;
   z-index: 10;
   transform: translateY($translateY);
-  transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0s, 0s, $time;
 }

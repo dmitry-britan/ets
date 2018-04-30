@@ -97,6 +97,41 @@ if ($productSinglePhoto.length) {
 })();
 
 (function() {
+	var $effectBlock = $('.is--effect-block');
+
+	$('.nav__link').on('mouseover', function(event) {
+		var $currentItem = $(event.currentTarget);
+		var width = $currentItem.innerWidth();
+		var left = $currentItem.position().left;
+
+		$('.nav__link').removeClass('is--active');
+		$currentItem.addClass('is--active');
+
+		setTimeout(function() {
+			if (!$currentItem.hasClass('is--active')) {
+				return false;
+			}
+			$effectBlock.css({
+				width: width,
+				left: left,
+				opacity: 1
+			});
+		}, 150);
+	});
+
+	$('.nav__inner').on('mouseleave', function() {
+		$('.nav__link').removeClass('is--active');
+		setTimeout(function() {
+			$effectBlock.css({
+				width: '0px',
+				left: '0px',
+				opacity: 0
+			});
+		}, 150);
+	});
+})();
+
+(function() {
 	$('a[href="#search"]').on('click', function(event) {
 		event.preventDefault();
 
