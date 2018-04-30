@@ -43,7 +43,16 @@ label {
     line-height: $lh--small;
     color: #ec0202;
   }
+
+  .form__file &.error{
+    top: 35px;
+  }
+  .form--vacancy &.error{
+    right: auto;
+    left: 0;
+  }
 }
+
 
 input,
 select,
