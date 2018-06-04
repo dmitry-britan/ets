@@ -30,6 +30,11 @@
   width: 100%;
   max-width: 560px;
   margin: 65px auto 0;
+  
+  label.error {
+    right: auto;
+    bottom: -20px;
+  }
 }
 .search-modal__close {
   position: absolute;
